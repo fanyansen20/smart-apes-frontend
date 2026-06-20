@@ -1,0 +1,19 @@
+@import "/styles/themes/light-theme";
+
+.headerTitle {
+  position: relative;
+  text-align: left;
+  background-color: $primary-1;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-image: url(../../../../public/assets/images/FlowTop.png);
+  background-size: cover;
+
+  & .headerText {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.20000000298023224px;
+    color: $secondary-13;
+  }
+}

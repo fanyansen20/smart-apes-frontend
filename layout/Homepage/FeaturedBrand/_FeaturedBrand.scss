@@ -1,0 +1,69 @@
+.imageFloatFeaturedBrand {
+  z-index: -1;
+  position: absolute;
+  @include breakpoints.media(md) {
+    display: none;
+  }
+  @include breakpoints.media(lg) {
+    display: block;
+  }
+}
+
+.featuredBrandContainer {
+  position: relative;
+  margin-top: 60px;
+  padding: 30px 0;
+  background-color: #fbefff90;
+  border-radius: 30px;
+  object-fit: contain;
+
+  & .ufoImageFeaturend {
+    @extend .imageFloatFeaturedBrand;
+    width: 150px;
+    height: 130px;
+    bottom: -107px;
+    left: -104px;
+  }
+
+  & .planetImageFeaturend {
+    @extend .imageFloatFeaturedBrand;
+    width: 162px;
+    height: 95px;
+    top: 130px;
+    right: -104px;
+  }
+
+  & .featuredBrandHeaderTitle {
+    color: $secondary-3;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  & .featuredBrandHeaderSubTitle {
+    color: $secondary-3;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  & .containerClinetFeaturedBrand {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px 50px 0;
+    & .boxFeaturedBrand {
+      position: relative;
+      margin: 5px;
+      width: 158px;
+      height: 144px;
+      background-color: $secondary-13;
+      border-radius: 10px;
+      border: 1px solid $secondary-7;
+      & .imageFeaturedBrand {
+        position: relative;
+        width: 120px;
+        height: 140px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

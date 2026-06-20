@@ -1,0 +1,18 @@
+@import "../../../../../../styles/themes/light-theme";
+
+.container {
+  text-align: left;
+  padding: 0 0.62rem;
+
+  & button {
+    height: 32px;
+  }
+
+  & .containerCard {
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

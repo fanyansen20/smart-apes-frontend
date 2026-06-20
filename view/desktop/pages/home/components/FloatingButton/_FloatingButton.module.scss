@@ -1,0 +1,33 @@
+@import "../../../../../../styles/themes/light-theme";
+
+.tooltipCustom {
+  font-family: "Inter";
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+  background-color: $secondary-13;
+  color: $secondary-1;
+}
+
+.containerImageFloat {
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  left: 92%;
+  bottom: 50px;
+  flex-direction: column;
+
+  & .tooltipMarketPlace {
+    background-color: $secondary-13;
+    border: 2px solid $primary-1;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    & .imageIconMarketPlace {
+      position: relative;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

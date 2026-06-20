@@ -1,0 +1,30 @@
+.navigationUpper {
+  background-color: $secondary-11;
+  position: relative;
+
+  & .MuiGrid-root {
+    padding: 0.3rem 0;
+    & p {
+      font-size: 12px;
+      font-weight: 500;
+      color: $secondary-2;
+    }
+
+    & .follow-us {
+      margin-left: 25px;
+    }
+
+    & .follow-us-icon {
+      margin-left: 8px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+
+  & .countryDiv {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}

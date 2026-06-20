@@ -1,0 +1,277 @@
+.headerTitlePreAssessment {
+  & .MuiTypography-subtitle1 {
+    color: $primary-1;
+    font-weight: 700;
+  }
+
+  & .MuiTypography-subtitle2 {
+    font-weight: 700;
+    color: $secondary-2;
+  }
+
+  & .MuiTypography-h6 {
+    color: $secondary-2;
+    font-weight: 700;
+  }
+
+  & .MuiTypography-body2 {
+    color: $secondary-2;
+  }
+}
+
+.containerPreAssessment {
+  background: linear-gradient(#6d34e0, #fff);
+  height: 100vh;
+  margin-top: -20px;
+
+  & .heroSection {
+    position: relative;
+    margin: 0 auto;
+    color: $secondary-13;
+    padding: 100px 0 65%;
+
+    & .containerPlanetOrangeImage {
+      position: absolute;
+      width: 150px;
+      aspect-ratio: 1/1;
+      top: 15%;
+      left: -10%;
+    }
+
+    & .containerThreePlanetImage {
+      position: absolute;
+      width: 180px;
+      aspect-ratio: 1/1;
+      right: 0;
+      top: 20%;
+    }
+
+    & .containerPaperPlaneImage {
+      position: absolute;
+      width: 80px;
+      aspect-ratio: 1/1;
+      top: 5%;
+      right: 5%;
+    }
+
+    & .textContent {
+      position: relative;
+      & .MuiTypography-h3 {
+        font-weight: 700;
+        & .warningText {
+          color: $quinary-4;
+        }
+      }
+    }
+
+    & .subTitle {
+      font-size: 12px;
+      font-weight: 500;
+      padding-top: 10px;
+      margin: 0 auto;
+    }
+
+    & .heroImage {
+      margin: 0 auto;
+      position: absolute;
+      top: 200px;
+      width: 100%;
+      aspect-ratio: 4/3;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  & .accountSection {
+    padding-bottom: 100px;
+    & .headerTitleSection {
+      & .MuiTypography-h5 {
+        color: $primary-1;
+        font-weight: 700;
+      }
+    }
+
+    & .contentHowTo {
+      background-color: $secondary-12;
+      margin-top: 20px;
+      position: relative;
+      padding: 10px;
+
+      & .dashedBorder {
+        position: absolute;
+        left: 52px;
+        top: 100px;
+        height: 75%;
+        width: 4px;
+        border-right: 4px dashed #475467;
+        z-index: 0;
+      }
+
+      & .containerListHowTo {
+        cursor: pointer;
+
+        & .containerListNumber {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 20px;
+
+          & .circleListContainer {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #959ca5;
+            & .borderCircle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              border: 1px solid #475467;
+              transform: translate(-2px, -2px);
+              & .circleItem {
+                font-size: 50px;
+                font-weight: 700;
+                color: $secondary-13;
+              }
+            }
+          }
+        }
+
+        & .MuiTypography-subtitle2 {
+          font-weight: 700;
+          font-size: 16px;
+          color: $secondary-2;
+          text-align: left;
+          padding: 30px 0 10px;
+        }
+
+        & .MuiTypography-body2 {
+          color: $secondary-2;
+          text-align: justify;
+          & a {
+            color: $primary-2;
+          }
+        }
+      }
+
+      & .containerListHowToActive {
+        @extend .containerListHowTo;
+        cursor: default;
+        & .containerListNumber {
+          & .circleListContainer {
+            background-color: #c4a1ff;
+            & .borderCircle {
+              border: 1px solid #9c63ff;
+            }
+          }
+        }
+
+        & .MuiTypography-subtitle2 {
+          color: $primary-2;
+        }
+      }
+
+      & .containerImageHowTo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .imageTutor {
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: 90%;
+          // height: 70%;
+          aspect-ratio: 4/3;
+          box-shadow: -7px 4px 26px rgba(0, 0, 0, 0.25);
+        }
+
+        & .imageTutorAnimate {
+          @extend .imageTutor;
+          animation: fadeIn 2s;
+        }
+      }
+    }
+  }
+
+  & .buttonHowTo {
+    & .MuiButton-root {
+      color: $secondary-13;
+      background-color: $primary-1;
+      padding: 15px 30px;
+      font-weight: 700;
+      border-radius: 40px;
+    }
+  }
+
+  & .reasonContent {
+    @extend .headerTitlePreAssessment;
+    margin-top: 70px;
+
+    & .MuiTypography-body2 {
+      padding: 0 40px;
+    }
+
+    & .imageContent {
+      position: relative;
+      min-height: 120px;
+      margin: 50px 0 30px;
+    }
+  }
+
+  & .testimonialContent {
+    @extend .headerTitlePreAssessment;
+    margin-top: 70px;
+
+    & .headerTitleTestimonial {
+      position: relative;
+      & .boxBackground {
+        position: absolute;
+        background-color: $secondary-12;
+        width: 100%;
+        height: 250px;
+        top: -40px;
+        z-index: -1;
+      }
+    }
+
+    & .MuiCard-root {
+      border-radius: 20px;
+      max-width: 350px;
+      margin: 40px auto;
+
+      & .MuiAvatar-root {
+        width: 60px;
+        height: 60px;
+      }
+
+      & .MuiCardContent-root {
+        position: relative;
+        text-align: left;
+        & .backTickIcon {
+          position: absolute;
+          top: -10px;
+          right: 22%;
+          width: 44px;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      & .MuiTypography-body2 {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

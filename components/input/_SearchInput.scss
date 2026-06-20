@@ -1,0 +1,45 @@
+.searchInputDiv {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  & .searchInput {
+    overflow: hidden;
+    font-size: 14px;
+    background-color: $secondary-11;
+    height: 50px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 0 15px;
+
+    // button css
+    & .MuiButton-root {
+      color: $secondary-3;
+      background-color: transparent;
+    }
+
+    // in start position in search
+    & .MuiInputAdornment-positionStart {
+      padding: 30px 10px;
+      margin-left: -20px;
+      font-weight: 600;
+    }
+
+    // this custom css divider
+    & .MuiDivider-root {
+      border: 1px solid $secondary-8;
+      margin-left: 10px;
+      height: 20px;
+    }
+  }
+}
+
+.menuItemSearch {
+  &.MuiMenu-list {
+    &.MuiMenuItem-root {
+      padding: 10px 25px 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

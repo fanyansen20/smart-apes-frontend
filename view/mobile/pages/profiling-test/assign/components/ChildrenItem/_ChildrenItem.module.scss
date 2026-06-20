@@ -1,0 +1,55 @@
+@import "../../../../../../../styles/themes/light-theme-v2";
+
+.border {
+  border-radius: 8px;
+  border: 1px solid $grey-50;
+}
+
+.selected {
+  border-color: $brand-500;
+}
+
+.disabled {
+  background-color: $grey-0;
+
+  & p {
+    color: $text-200 !important;
+  }
+}
+
+.container {
+  @extend .border;
+
+  & .imageContainer {
+    position: relative;
+    width: 60px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+
+    & .img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  & .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 8px;
+
+    & .title {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-500;
+    }
+
+    & .subtitle {
+      font-size: 12px;
+      font-weight: 500;
+      color: $text-200;
+    }
+  }
+}

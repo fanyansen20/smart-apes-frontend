@@ -1,0 +1,162 @@
+.shopHeader {
+  @include breakpoints.media(xs) {
+    font-size: 8px;
+  }
+  @include breakpoints.media(sm) {
+    font-size: 12px;
+  }
+  @include breakpoints.media(md) {
+    font-size: 16px;
+  }
+
+  border: 1px solid $secondary-9;
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 35px 0px #00000014;
+
+  & .shopImage {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid $secondary-9;
+    border-radius: 10px;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 84px;
+  }
+
+  & .shopName {
+    display: flex;
+    align-items: center;
+    @include breakpoints.media(xs) {
+      gap: 0.1em;
+    }
+    @include breakpoints.media(sm) {
+      gap: 1em;
+    }
+
+    & p {
+      font-size: 2em;
+      font-weight: 700;
+      color: $secondary-4;
+      margin: 0;
+      width: fit-content;
+    }
+  }
+
+  & .containerShopInfo {
+    @include breakpoints.media(xs) {
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      justify-content: center;
+      gap: 0.5em;
+    }
+    @include breakpoints.media(sm) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1em;
+    }
+    @include breakpoints.media(md) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2em;
+    }
+    & .shopInfo {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      & p {
+        margin: 0;
+        font-size: 0.875em;
+        font-weight: 400;
+        color: $secondary-4;
+      }
+
+      & .starIcon {
+        vertical-align: bottom;
+        align-items: center;
+        color: $primary-4;
+      }
+
+      & .starIconDark {
+        vertical-align: bottom;
+        align-items: center;
+        color: $secondary-6;
+      }
+    }
+  }
+
+  & .btnGroup {
+    @include breakpoints.media(xs) {
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      justify-content: center;
+      gap: 0.5em;
+    }
+    @include breakpoints.media(sm) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1em;
+    }
+    gap: 0.5em;
+
+    & button {
+      border: 1px solid $primary-1;
+      font-size: 0.625em;
+      font-weight: 700;
+      color: $primary-1;
+      min-height: 0;
+      min-width: 0;
+
+      & p {
+        margin: 0;
+        @include breakpoints.media(xs) {
+          display: none;
+        }
+        @include breakpoints.media(sm) {
+          display: none;
+        }
+        @include breakpoints.media(md) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.containerTabsPanel {
+  margin-top: 30px;
+  display: flex;
+  border-bottom: 2px solid $secondary-8;
+  color: $secondary-4;
+  font-weight: 500;
+  gap: 10px;
+
+  & .tabPanel {
+    cursor: pointer;
+    padding: 14px 30px;
+  }
+
+  & .tabPanel_active {
+    @extend .tabPanel;
+    cursor: default;
+    color: $primary-1;
+    font-weight: 700;
+    border-bottom: 2px solid $primary-1;
+  }
+}

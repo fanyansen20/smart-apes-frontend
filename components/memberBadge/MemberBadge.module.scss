@@ -1,0 +1,30 @@
+@import "../../styles/themes/light-theme";
+
+.memberBadgeHeader {
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid #bcc2ce;
+  border-radius: 8px;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+
+  & p {
+    margin: 0;
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  & .memberHeading__Basic {
+    color: $secondary-5;
+  }
+
+  & .memberHeading__Premium {
+    color: #c89a25;
+  }
+
+  & .memberHeading__Elite {
+    color: #6053ad;
+  }
+}

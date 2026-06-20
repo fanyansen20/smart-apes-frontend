@@ -1,0 +1,53 @@
+.imageFloatBestSeller {
+  position: absolute;
+  z-index: -1;
+  @include breakpoints.media(md) {
+    display: none;
+  }
+  @include breakpoints.media(lg) {
+    display: block;
+  }
+}
+
+.containerTenProductSection {
+  position: relative;
+  margin-top: 60px;
+  & .bestSellerHeader {
+    color: $secondary-1;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 51px;
+    & .titleCategory {
+      color: $primary-2;
+    }
+  }
+  & .imagePlanetRight {
+    @extend .imageFloatBestSeller;
+    width: 600px;
+    height: 600px;
+    right: -336px;
+    bottom: -206px;
+  }
+  & .imagePlanetLeft {
+    @extend .imageFloatBestSeller;
+    width: 600px;
+    height: 600px;
+    left: -220px;
+    bottom: 0px;
+  }
+  & .imagePlanetBg {
+    @extend .imageFloatBestSeller;
+    width: 162px;
+    height: 95px;
+    right: -87px;
+    top: 190px;
+    transform: scaleX(-1);
+  }
+  & .ufoImageBG {
+    @extend .imageFloatBestSeller;
+    width: 150px;
+    height: 130px;
+    left: -99px;
+    top: 260px;
+  }
+}

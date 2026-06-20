@@ -1,0 +1,20 @@
+.MuiInputLabel-root {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: $secondary-1;
+  margin-bottom: 10px;
+}
+
+.MuiInputBase-input {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.MuiOutlinedInput-root {
+  background-color: $secondary-13;
+  border-radius: 10px;
+}
+
+.Mui-focused fieldset {
+  border: 1px solid $primary-1 !important;
+}

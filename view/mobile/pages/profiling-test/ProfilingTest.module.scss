@@ -1,0 +1,285 @@
+@import "../../../../styles/themes/light-theme";
+
+.primaryText {
+  color: #7e54f1;
+}
+
+.mainHeader {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  line-height: 45px !important;
+  letter-spacing: -0.03em !important;
+}
+
+.sectionList {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  letter-spacing: -0.03em !important;
+}
+
+.sectionListHeader {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 21px !important;
+}
+
+.sectionTitle {
+  @extend .sectionListHeader;
+  line-height: 19.12px !important;
+  letter-spacing: 0.12em !important;
+  color: #7e54f1;
+}
+
+.sectionDesc {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 36px !important;
+  letter-spacing: -0.03em !important;
+}
+
+.sectionInfo {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: -0.02em !important;
+
+  &.childrenInfo {
+    text-align: left;
+    & span {
+      overflow: unset !important;
+      position: relative !important;
+
+      & img {
+        min-width: unset !important;
+        max-width: unset !important;
+        min-height: unset !important;
+        max-height: unset !important;
+        position: unset !important;
+        width: 80px !important;
+        height: 80px !important;
+      }
+    }
+  }
+
+  &.childrenNeeds {
+    text-align: left;
+    & span {
+      overflow: unset !important;
+      position: relative !important;
+
+      & img {
+        min-width: unset !important;
+        max-width: unset !important;
+        min-height: unset !important;
+        max-height: unset !important;
+        position: unset !important;
+        width: 80px !important;
+        height: 80px !important;
+      }
+    }
+  }
+}
+
+.cardHeader {
+  display: flex;
+  min-height: 60px !important;
+  align-items: center;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 30px !important;
+}
+
+.cardBasePrice {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  text-decoration: line-through;
+  color: #adadad;
+}
+
+.cardFinalPrice {
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  line-height: 45px !important;
+  letter-spacing: 0.02em !important;
+}
+
+.cardList {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+}
+
+.cardStepTest {
+  padding: 16px !important;
+  border-radius: 8px !important;
+  border: 1px solid #e9edf5;
+}
+
+.membershipCardBanner {
+  width: 320px;
+  height: 198px;
+  padding: 16px;
+  border-radius: 8px;
+  background-image: url("../../assets/images/profiling-test-page/membership-banner.svg");
+}
+
+.basicTestCardBanner {
+  width: 320px;
+  height: 198px;
+  padding: 16px;
+  border-radius: 8px;
+  background-image: url("../../assets/images/profiling-test-page/basic-package-banner.svg");
+}
+
+.cardBannerHeader {
+  @extend .cardHeader;
+  color: $secondary-13;
+}
+
+.cardBannerInfo {
+  @extend .sectionInfo;
+  color: $secondary-13;
+}
+
+.cardBannerBtn {
+  padding: 10px 16px !important;
+  border-radius: 8px !important;
+  color: $primary-1;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 12px !important;
+  background-color: $secondary-13;
+
+  &:hover {
+    background-color: $secondary-11;
+  }
+}
+
+.sectionListInfo {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+
+  & img {
+    width: 61.49px !important;
+    height: 67.8px !important;
+  }
+}
+
+.accurateResult {
+  & img {
+    min-width: 80px !important;
+    min-height: 80px !important;
+  }
+}
+
+.pricingPlanFeatureList {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+}
+
+.primaryChip {
+  width: 36%;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  color: #7e54f1;
+  background-color: #7e54f133;
+}
+
+.pricingPlanSection {
+  margin: 0 -16px !important;
+  margin-top: 32px !important;
+  padding: 16px 0;
+  background-color: #f7f9fc;
+
+  & .swiperPricingPlanSection {
+    width: 100%;
+    height: 100%;
+    padding: 2px 25px !important;
+
+    & slide {
+      padding: 24px !important;
+      gap: 20px !important;
+      border-radius: 8px !important;
+      border: 1px solid #bcc2ce;
+      background-color: $secondary-13;
+
+      /* Center slide text vertically */
+      width: auto;
+      height: auto;
+      max-width: 95%;
+      margin-bottom: 60px !important;
+      & hr {
+        border-width: 4px !important;
+        border-color: #f7f9fc;
+      }
+    }
+
+    // & .swiper-slide {
+    //   width: auto;
+    // }
+  }
+}
+
+.swiperSlidePricingPlanSection {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.bulletSlideActive {
+  opacity: unset !important;
+  background: $primary-1 !important;
+}
+
+.accordionFaq {
+  border-radius: 8px !important;
+  &::before {
+    background-color: unset;
+  }
+
+  & .accordionFaqSummary {
+    min-height: unset;
+    & .accordionFaqSummaryContent {
+      margin: 16px 0;
+      margin-bottom: 10px !important;
+      & .accordionFaqTitle {
+        @extend .sectionList;
+        &::before {
+          content: url("../../assets/icons/plus-circle-lined.svg");
+          top: 0.9px !important;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  &.accordionFaqExpanded {
+    background-color: #f7f9fc;
+
+    &
+      .accordionFaqSummary
+      > .accordionFaqSummaryContent
+      > .accordionFaqTitle::before {
+      content: url("../../assets/icons/minus-circle-lined.svg");
+      top: 0.9px !important;
+      position: relative;
+    }
+  }
+
+  & .accordionFaqDetails {
+    @extend .sectionListInfo;
+    text-align: justify;
+    padding: 20px 0;
+    padding-top: 0;
+    padding-left: 45px !important;
+    padding-right: 34px !important;
+  }
+}

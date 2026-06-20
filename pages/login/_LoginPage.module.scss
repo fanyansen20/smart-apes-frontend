@@ -1,0 +1,70 @@
+.loginDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem 4rem;
+  gap: 1.5rem;
+  overflow: auto;
+
+  & .welcomeBack {
+    color: $secondary-2;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  & .title {
+    font-family: Mulish;
+    color: $secondary-1;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  & .googleSignInButtonDiv {
+    & .googleSignInButton {
+      background-color: $senary-7;
+      color: $senary-2;
+      border-radius: 8px;
+      padding: 0.8rem 0;
+      text-transform: none;
+    }
+  }
+
+  & .additionalLinkDiv {
+    display: flex;
+    justify-content: space-between;
+    color: $senary-2;
+
+    .text {
+      font-size: 14px;
+    }
+
+    & .registerLinkDiv {
+      display: flex;
+
+      & .registerText {
+        @extend .text;
+        color: $secondary-1;
+        font-weight: 400;
+      }
+
+      & .registerLink {
+        @extend .text;
+        margin-left: 0.3em;
+        color: $primary-1;
+        text-decoration: underline;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+    & .forgotPasswordLink {
+      color: $primary-1;
+      font-size: 14px;
+      text-decoration: underline;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}

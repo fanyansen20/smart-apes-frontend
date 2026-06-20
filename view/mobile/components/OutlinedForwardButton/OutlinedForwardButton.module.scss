@@ -1,0 +1,14 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.outlinedForwardButton {
+  color: $text-900;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-color: $grey-200;
+  text-align: left;
+  justify-content: space-between;
+
+  & svg {
+    width: 0.6em;
+  }
+}

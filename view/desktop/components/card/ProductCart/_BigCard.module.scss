@@ -1,0 +1,130 @@
+@import "../../../../../styles/themes/light-theme";
+
+.Card {
+  position: relative;
+  width: 220px;
+  max-height: 300px;
+  box-shadow: 0px 4px 35px 0px $secondary-10;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+
+  & .contentProductCard {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .containerCardImage {
+      position: relative;
+      width: 100%;
+      min-height: 10rem;
+      border-radius: 5px;
+
+      & .recommended-label {
+        z-index: 1;
+        position: absolute;
+        padding: 0.25rem 0.4rem;
+        top: 10%;
+        background-color: $quinary-2;
+        & p {
+          font-size: 0.625rem;
+          font-weight: 700;
+          color: $secondary-13;
+        }
+      }
+
+      & .discount-banner-image {
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        z-index: 1;
+        right: 8%;
+        & .discount-content {
+          position: relative;
+          & .discount-percent {
+            line-height: 1rem;
+            position: absolute;
+            top: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $secondary-13;
+            text-align: center;
+          }
+
+          & .discount-off {
+            @extend .discount-percent;
+            top: 1rem;
+          }
+        }
+      }
+
+      & img {
+        z-index: 0;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain;
+      }
+    }
+
+    & .cardTitle {
+      padding: 0.5rem 0.5rem 0 0.5rem;
+      font-weight: 500;
+      font-size: 16px;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+
+    & .details {
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      & .price {
+        color: $secondary-3;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      & .discountPrice {
+        @extend .price;
+        color: $secondary-8;
+        font-size: 14px;
+        text-decoration: line-through;
+      }
+
+      & .bottomCardSection {
+        margin-top: 10px;
+        display: flex;
+        gap: 0.4rem;
+
+        & .starIcon {
+          color: #f4c150;
+          font-size: 16px;
+        }
+
+        & .scoreText {
+          color: $secondary-3;
+          font-weight: 500;
+          font-size: 12px;
+        }
+      }
+
+      & .divider {
+        border-color: $secondary-11;
+      }
+    }
+  }
+
+  & .buttonPopupSection {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.container {
+  background-color: $grey-0;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px $grey-100 solid;
+
+  & .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-500;
+  }
+
+  & .subtitle {
+    font-size: 12px;
+    color: $sec-text-500;
+  }
+
+  & .input {
+    font-size: 12px;
+    color: $sec-text-500;
+  }
+
+  & .inputText {
+    margin: 1rem 0;
+
+    & textarea {
+      @extend .input;
+    }
+  }
+
+  & .characterIndicator {
+    @extend .input;
+
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0;
+  }
+}

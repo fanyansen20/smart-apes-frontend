@@ -1,0 +1,8 @@
+@import "../../../../styles/breakpoints";
+@import "../../../../styles/themes/light-theme";
+
+.containerLandingPageMobile {
+  @include maxWidthMarketPlace();
+  width: 95%;
+  margin: 0 auto 100px;
+}

@@ -1,0 +1,30 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.exploreContainer {
+  background: rgba(0, 0, 0, 0.5)
+    url("../../../../../../public/assets/about-us/banner-about-us.svg")
+    no-repeat center;
+  background-blend-mode: darken;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+
+  & .exploreTitle {
+    color: $text-0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.socialMediaContainer {
+  background-color: $grey-0;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  & .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $text-500;
+    margin-bottom: 1rem;
+  }
+}

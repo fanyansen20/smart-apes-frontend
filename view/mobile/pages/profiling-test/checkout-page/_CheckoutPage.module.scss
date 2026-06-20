@@ -1,0 +1,144 @@
+@import "../../../../../styles/themes/light-theme-v2";
+
+.container {
+  padding: 20px;
+
+  & .imageContainer {
+    border: 1px solid $grey-200;
+    border-radius: 8px;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  & .productTitle {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  & .priceContainer {
+    align-items: center;
+
+    p {
+      font-weight: 700;
+    }
+
+    & .discount {
+      color: $error-300;
+      background-color: $error-100;
+      border-radius: 5px;
+      padding: 2px 8px;
+    }
+
+    & .originalPrice {
+      text-decoration: line-through;
+      color: $grey-100;
+    }
+  }
+
+  & .quantityInputBtn {
+    display: flex;
+    gap: 7px;
+    height: 24px;
+
+    & .buttonQty {
+      background-color: $brand-500;
+      color: $text-0;
+
+      min-width: 24px;
+      max-width: 24px;
+      min-height: 24px;
+      max-height: 24px;
+      border-radius: 2px;
+    }
+
+    & .buttonDisabled {
+      @extend .buttonQty;
+
+      background-color: $grey-0;
+    }
+
+    & .numberInput {
+      & div {
+        border-radius: 2px;
+      }
+
+      & input {
+        text-align: center;
+        font-size: 12px;
+        width: 50px;
+        height: 24px;
+        padding: 0;
+      }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.contentContainer {
+  padding: 16px 20px;
+}
+
+.benefitContainer {
+  @extend .contentContainer;
+
+  flex-direction: column;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  border-color: $grey-0;
+  border-style: solid;
+
+  & .checkIcon {
+    color: $brand-500;
+  }
+
+  & .benefitText {
+    font-size: 14px;
+    font-weight: 500;
+    color: $text-500;
+  }
+}
+
+.paymentMethodContainer {
+  @extend .contentContainer;
+  margin-bottom: 60px;
+
+  & .paymentMethodTitle {
+    text-align: left;
+    font-weight: 700;
+    color: $text-500;
+  }
+
+  & .checkoutDisclaimer {
+    align-items: flex-start;
+
+    & .disclaimerText {
+      font-size: 12px;
+      text-align: justify;
+
+      & a {
+        color: $brand-500;
+      }
+    }
+  }
+}
+
+.summaryTitle {
+  font-size: 12px;
+  color: $text-500;
+}
+
+.summaryValue {
+  @extend .summaryTitle;
+
+  font-weight: 700;
+  padding-right: 8px;
+}

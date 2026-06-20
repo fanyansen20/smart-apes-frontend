@@ -1,0 +1,83 @@
+.containerModalAddAddress {
+  @extend .containerModalAlertAddress;
+  width: 35vw;
+  max-height: 90vh;
+  padding: 0;
+
+  // scrollbar START
+  &::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0;
+  }
+
+  &:hover::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background: $secondary-8;
+    margin: 5px 0;
+    border-radius: 7px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: $primary-1;
+    border-radius: 7px;
+  }
+  // scrollbar END
+
+  & .illustrationModalAddress {
+    position: absolute;
+    width: 100%;
+  }
+
+  & .containerFormControlModalAddAddress {
+    padding: 20px;
+    margin-top: 1rem;
+
+    & .MuiTypography-h6 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    & .formControl {
+      margin-bottom: 1rem;
+
+      & .MuiTypography-body2 {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+        color: $secondary-4;
+      }
+
+      & .MuiOutlinedInput-root.Mui-error {
+        & fieldset {
+          border: 1px solid $tertiary-1;
+        }
+      }
+
+      & .checkBoxAddress {
+        font-size: 12px;
+        font-weight: 700;
+        color: $secondary-4;
+      }
+    }
+
+    & .MuiButton-contained {
+      margin-top: 10px;
+      background-color: $primary-1;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    & .MuiButton-outlined {
+      margin-top: 10px;
+      color: $primary-1;
+      border: none;
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+}

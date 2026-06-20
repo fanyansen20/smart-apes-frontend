@@ -1,0 +1,82 @@
+.containerCatalogLevelOne {
+  position: relative;
+  padding-bottom: 5vw;
+
+  & .imageLeftCatalogOne {
+    @extend .imageFloatBestSeller;
+    width: 600px;
+    height: 600px;
+    top: 0;
+    left: -220px;
+    z-index: 0;
+  }
+
+  & .bannerCatalogLevelOne {
+    padding-top: 10px;
+  }
+
+  & .containerBoxCategoryLevelTwo {
+    flex: 1 1 auto;
+    position: relative;
+    border-radius: 12px;
+    background-color: $secondary-13;
+    box-shadow: 0px 1px 10px $secondary-10;
+    height: 65px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+
+    p {
+      margin-left: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      color: $secondary-3;
+    }
+  }
+
+  & .oneRowsCategory {
+    @extend .containerBoxCategoryLevelTwo;
+    max-width: 220px;
+    margin: 20px 0;
+  }
+
+  & .threeRowsCategory {
+    @extend .containerBoxCategoryLevelTwo;
+    width: 300px;
+  }
+
+  & .fourRowsCategory {
+    @extend .containerBoxCategoryLevelTwo;
+    width: 280px;
+  }
+
+  & .fiveRowsCategory {
+    @extend .containerBoxCategoryLevelTwo;
+    width: 220px;
+  }
+
+  & .dividerCatalogOne {
+    position: relative;
+    & .MuiDivider-root {
+      margin-top: 50px;
+      border-width: 5px;
+      border-color: $secondary-11;
+    }
+  }
+}
+
+.headerTitle {
+  position: relative;
+  text-align: left;
+  background-color: $primary-1;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  background-image: url(../../public/assets/images/FlowTop.png);
+  background-size: cover;
+
+  & .headerText {
+    font-weight: 700;
+    font-size: 20px;
+    color: $secondary-13;
+  }
+}

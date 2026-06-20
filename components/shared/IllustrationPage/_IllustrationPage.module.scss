@@ -1,0 +1,28 @@
+@use "../../../styles/breakpoints";
+@import "../../../styles/themes/light-theme-v2";
+
+.containerIllustrationPage {
+  margin: 50px 0;
+  text-align: center;
+  & .titleIllustrationPage {
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    @include breakpoints.media(xs) {
+      font-size: 1rem;
+    }
+  }
+  & .subTitleIllustrationPage {
+    @include breakpoints.media(xs) {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $text-500;
+    }
+
+    font-size: 0.875rem;
+    width: 18.75rem;
+    color: $grey-400;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+}

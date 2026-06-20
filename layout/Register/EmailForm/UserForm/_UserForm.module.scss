@@ -1,0 +1,49 @@
+.formUserMenu {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding: 3rem 2rem;
+
+  & .title {
+    font-size: 22px;
+    font-weight: 700;
+    width: 100%;
+
+    @include breakpoints.media(xs) {
+      text-align: center;
+    }
+
+    @include breakpoints.media(md) {
+      text-align: left;
+    }
+  }
+
+  & label {
+    @include breakpoints.media(xs) {
+      font-size: 12px;
+    }
+
+    @include breakpoints.media(md) {
+      font-size: 14px;
+    }
+  }
+
+  & input {
+    @include breakpoints.media(xs) {
+      font-size: 12px;
+    }
+
+    @include breakpoints.media(md) {
+      font-size: 14px;
+    }
+  }
+
+  & .inputLabel {
+    color: $secondary-1;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

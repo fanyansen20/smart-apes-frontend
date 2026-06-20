@@ -1,0 +1,73 @@
+@use "styles/themes/_light-theme" as *;
+@use "styles/breakpoints";
+
+.floatingImage {
+  max-height: 50px;
+  float: right;
+  position: absolute;
+  @include breakpoints.media(xs) {
+    display: none;
+  }
+
+  @include breakpoints.media(md) {
+    display: block;
+  }
+}
+
+.topTutorContainer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  & .topTutorHeader {
+    flex-direction: column;
+    align-items: center;
+    color: $secondary-3;
+    position: relative;
+    & .topTutorHeaderTitle {
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    & .topTutorHeaderText {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    & .topTutorSearchInputDiv {
+      display: flex;
+      align-items: center;
+      & .topTutorSearchInput {
+        margin-left: 0.5rem;
+        flex: 1;
+        background-color: $secondary-12;
+        height: 50px;
+        border-radius: 10px 0px 0px 10px;
+        padding: 10px;
+      }
+    }
+
+    & .topTutorLinkDiv {
+      align-self: flex-end;
+      margin-top: 20px !important;
+      z-index: 2;
+    }
+
+    & .planet {
+      @extend .floatingImage;
+      top: -70px;
+      left: 50px;
+    }
+
+    & .ufo {
+      @extend .floatingImage;
+      transform: scaleX(-1);
+      top: 55px;
+      right: 5px;
+    }
+  }
+
+  & .topTutorDetailsContainer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

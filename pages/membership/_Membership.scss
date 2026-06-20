@@ -1,0 +1,358 @@
+@import "../../styles/breakpoints";
+
+.membershipLanding {
+  margin-top: -10.5rem;
+  overflow-x: hidden;
+  padding-bottom: 5rem;
+
+  & h3,
+  h4,
+  h5,
+  p {
+    margin: 0;
+  }
+
+  & .memberHeading {
+    position: relative;
+    padding-top: 2rem;
+    background-image: url("../../public/assets/images/astronaut-member-bg.svg");
+    background-size: cover;
+
+    & h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: $secondary-2;
+      text-align: left;
+
+      & span {
+        position: relative;
+        color: $primary-1;
+      }
+
+      & span:after {
+        content: "";
+        position: absolute;
+        bottom: -1.3rem;
+        left: -4px;
+        height: 1rem;
+        width: 100%;
+        border: solid 5px $quinary-3;
+        border-color: $quinary-3 transparent transparent transparent;
+        border-radius: 50%;
+      }
+    }
+
+    & h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #64607d;
+      text-align: left;
+    }
+
+    & .planet {
+      position: absolute;
+      top: -200px;
+      right: -250px;
+      z-index: 1;
+    }
+  }
+
+  & .memberStep {
+    position: relative;
+
+    & .moonGray {
+      position: absolute;
+      top: -130px;
+      z-index: 1;
+    }
+
+    & .memberStepContainer {
+      z-index: 2;
+      position: relative;
+      background-color: #f3f7fa;
+      padding: 1rem 0;
+      margin-top: 5rem;
+
+      & h3 {
+        font-weight: 700;
+        font-size: 2rem;
+        color: $secondary-2;
+        text-align: left;
+        margin: 0;
+      }
+
+      & h4 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $secondary-7;
+        text-align: left;
+      }
+
+      & .stepHeading {
+        display: flex;
+        align-items: center;
+      }
+
+      & .contentItem {
+        text-align: left;
+
+        & .contentTitle {
+          font-family: "Poppins";
+          text-align: left;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: $secondary-2;
+          margin: 0;
+        }
+
+        & .contentSubtitle {
+          font-family: "Poppins";
+          font-size: 1.125rem;
+          font-weight: 300;
+          text-align: left;
+          color: #757095;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  & .memberOptions {
+    margin-top: 2.5rem;
+    position: relative;
+
+    & h3 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 60px;
+      text-align: center;
+      color: $secondary-1;
+      margin-bottom: 1rem;
+    }
+
+    & h5 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-align: center;
+      color: $primary-1;
+    }
+
+    & .memberTierCardContainer {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    & .memberTierCard {
+      border: 1px solid $secondary-10;
+      border-radius: 0.5rem;
+      background-color: $secondary-13;
+      transition: transform 0.5s ease;
+
+      & .tierHighlight {
+        display: none;
+      }
+
+      & .tierContent {
+        padding: 1rem;
+
+        @include media(md) {
+          min-height: 500px;
+        }
+
+        & h4 {
+          font-size: 1.875rem;
+          font-weight: 600;
+          color: $secondary-1;
+
+          & span {
+            font-size: 1rem;
+          }
+        }
+
+        & button {
+          margin-top: 1rem;
+          margin-bottom: 1.3rem;
+          font-size: 0.875rem;
+        }
+
+        & p {
+          text-align: left;
+          font-size: 1rem;
+          font-weight: 700;
+          color: $secondary-1;
+          margin-bottom: 0.3rem;
+        }
+
+        & .currentPlan {
+          text-align: center;
+          margin-bottom: 1.3rem;
+        }
+
+        & .memberBadge {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        & .tierPerks {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.3rem;
+
+          & p {
+            font-weight: 500;
+          }
+
+          & svg {
+            color: $primary-1;
+          }
+        }
+      }
+    }
+
+    & .memberTierCardPopular {
+      @extend .memberTierCard;
+      border: 1px solid #ea580c;
+
+      & .tierHighlight {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 0;
+        text-align: center;
+        color: $secondary-13;
+        background-color: #ea580c;
+        border-radius: 0.35rem 0.35rem 0 0;
+        display: block;
+      }
+
+      & .tierContent {
+        padding-top: 2rem;
+
+        & img {
+          height: 135px !important;
+        }
+
+        & h4 {
+          font-size: 2.5rem;
+        }
+
+        & p {
+          font-size: 1.125rem;
+        }
+
+        @include media(md) {
+          min-height: 590px;
+        }
+      }
+    }
+
+    & .memberTierCard:hover {
+      transform: translateY(-1rem);
+    }
+
+    & .btnMember {
+      padding: 1rem 1.5rem;
+      margin-top: 5rem;
+      background-color: $primary-1;
+      color: $secondary-13;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.875rem;
+      border-radius: 3rem;
+    }
+
+    & .planetLeftBot {
+      position: absolute;
+      bottom: -20rem;
+      left: -15rem;
+    }
+
+    & .leftOption {
+      text-align: left;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      & .stepLabel {
+        font-size: 1.125rem;
+        font-weight: 800;
+        color: $secondary-7;
+        margin: 0;
+      }
+
+      & h3 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: $secondary-2;
+        margin: 0;
+      }
+
+      & h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #64607d;
+        margin: 0;
+      }
+    }
+
+    & .rightOption {
+      position: relative;
+
+      & h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        color: $secondary-1;
+      }
+
+      & h5 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-align: left;
+        color: $primary-1;
+      }
+
+      & .memberBenefit {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.9rem;
+
+        & .memberBenefitIcon {
+          min-width: 4rem;
+
+          & img {
+            width: 2.5rem;
+          }
+        }
+
+        & p {
+          flex-shrink: 2;
+          font-size: 1rem;
+          font-weight: 400;
+          text-align: left;
+          color: $secondary-2;
+        }
+      }
+
+      & .planetOrange {
+        position: absolute;
+        top: 0;
+        right: -90px;
+        z-index: 1;
+      }
+    }
+  }
+
+  & .memberOptionsPricing {
+    background-color: #f7f9fc;
+    padding: 2rem 0;
+  }
+}

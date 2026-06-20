@@ -1,0 +1,282 @@
+.cartDiv {
+  display: flex;
+  text-align: left;
+  & .leftDiv {
+    width: 65%;
+
+    & .headerCart {
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 37px;
+      margin-top: -23px;
+      color: $secondary-1;
+    }
+
+    & .headerButtons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      & .selectAll {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $secondary-1;
+
+        & .selectAllText {
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+
+    & .row {
+      margin-top: 1rem;
+      & .physicalHeader {
+        background-color: $primary-1;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 20px;
+          color: $secondary-13;
+        }
+      }
+
+      & .digitalHeader {
+        background-color: $quinary-4;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 20px;
+          color: $secondary-13;
+        }
+      }
+
+      & .coursesHeader {
+        background-color: $primary-2;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 20px;
+          color: $secondary-13;
+        }
+      }
+
+      & .tuitionsHeader {
+        background-color: $quaternary-3;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 20px;
+          color: $secondary-13;
+        }
+      }
+
+      & .productsByShop {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        & .shop {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          & .logoCartShop {
+            position: relative;
+            background-color: $secondary-10;
+            width: 50px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+
+          & .shopName {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            color: $secondary-1;
+          }
+          & .shopCountry {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+            color: $secondary-5;
+          }
+        }
+
+        & .product {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+
+          & .bundleProducts {
+            width: 80%;
+          }
+
+          & .checkBoxDiv {
+            height: 1.15em;
+          }
+
+          & .productImage {
+            position: relative;
+            width: 20%;
+            height: 100px;
+            border: 1px solid $secondary-10;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+
+          & .productTitleBundle {
+            font-size: 20px !important;
+            font-weight: 700;
+            overflow: hidden;
+            word-wrap: break-word;
+          }
+
+          & .disabledProductImage {
+            @extend .productImage;
+            opacity: 0.3;
+          }
+
+          & .productDetails {
+            width: 76%;
+            display: flex;
+            flex-direction: column;
+
+            &.bundleHeader {
+              width: auto;
+            }
+
+            & .productCartTitle {
+              font-weight: 700;
+              font-size: 24px;
+              overflow: hidden;
+              word-wrap: break-word;
+            }
+
+            & .savePriceLabel {
+              padding: 4px 16px;
+              border-radius: 8px 0 0 8px;
+              margin-right: -29px;
+              background-color: $quinary-2;
+
+              .textLabel {
+                color: $secondary-13;
+              }
+            }
+
+            & .priceCartContainer {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              color: $secondary-1;
+              margin: 10px 0;
+
+              & .discountPercent {
+                color: $tertiary-3;
+                background-color: $tertiary-6;
+                padding: 0.3rem 0.7rem;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: 500;
+              }
+
+              & .discountAmount {
+                text-decoration: line-through;
+                font-weight: 700;
+                color: $secondary-9;
+                font-size: 16px;
+              }
+
+              & .price {
+                font-weight: 700;
+                font-size: 20px;
+                color: $secondary-1;
+              }
+            }
+
+            & .disabledProductCartTitle {
+              @extend .productCartTitle;
+              color: $secondary-8;
+            }
+
+            & .disabledPriceCartContainer {
+              @extend .priceCartContainer;
+              & .price {
+                color: $secondary-8;
+              }
+            }
+
+            & .MuiTypography-h6 {
+              font-size: 1em;
+              color: $tertiary-2;
+              font-weight: 700;
+            }
+          }
+
+          & .additionalButtonsCart {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 24%;
+            & p {
+              text-align: right;
+              color: $secondary-1;
+              font-weight: 700;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .rightDiv {
+    width: 35%;
+    & .overviewCart {
+      box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 13.1647px;
+      position: sticky;
+      top: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      margin-left: 1.8rem;
+      text-align: left;
+
+      & .title {
+        font-weight: 700;
+        font-size: 18px;
+        color: $secondary-1;
+      }
+
+      & .subTitleCart {
+        font-weight: 700;
+        font-size: 13px;
+        color: #7a7a7a;
+      }
+
+      & .subOverview {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .subOverviewGrandTotal {
+          font-weight: 700;
+          font-size: 16px;
+          color: $secondary-1;
+        }
+      }
+    }
+  }
+}

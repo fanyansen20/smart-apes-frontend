@@ -1,0 +1,47 @@
+@import "../../../../pages/terms-and-conditions/style.module.scss";
+@import "../../../../styles/themes/light-theme-v2";
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+
+  & p {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  & .title {
+    color: $text-500;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  & a {
+    color: $info-500;
+  }
+
+  & .listTitle {
+    font-size: 16px;
+    color: $text-500;
+    font-weight: 600;
+  }
+
+  & .listContainer {
+    & .orderedListNumber {
+      & li {
+        font-size: 16px;
+        color: $text-500;
+        font-weight: 600;
+
+        & .orderedListNumber {
+          & li {
+            font-size: 14px;
+            color: $sec-text-500;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

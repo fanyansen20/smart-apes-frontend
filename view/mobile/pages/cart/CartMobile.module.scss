@@ -1,0 +1,65 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.containerCartMobile {
+  padding: 20px;
+  margin-bottom: 50px;
+
+  & p {
+    margin: 0;
+  }
+
+  & .massAction {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p,
+    label {
+      font-size: 12px;
+      font-weight: 700;
+      color: $text-500;
+    }
+
+    & button {
+      border: none;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+
+      & input {
+        margin-right: 10px;
+        border-width: 1px;
+      }
+    }
+  }
+
+  & .shopInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    & img {
+      border-radius: 50%;
+      border: 1px solid $grey-200;
+    }
+
+    & .shopName {
+      font-size: 12px;
+      font-weight: 700;
+      color: $text-500;
+      text-align: left;
+      margin-left: 8px;
+    }
+
+    & .shopCountry {
+      font-size: 10px;
+      font-weight: 400;
+      text-align: left;
+      color: $text-500;
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Smart Apes App",
+  "short_name": "Smart Apes App",
+  "icons": [
+    {
+      "src": "/icons/app-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-logo-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "theme_color": "#bc3ce9",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone"
+}

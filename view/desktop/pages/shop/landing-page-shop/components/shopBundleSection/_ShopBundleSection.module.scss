@@ -1,0 +1,17 @@
+@import "styles/themes/light-theme";
+
+.containerBundleShop {
+  text-align: left;
+  & .titleBundle {
+    color: $secondary-1;
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  & .containerCardBundle {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}

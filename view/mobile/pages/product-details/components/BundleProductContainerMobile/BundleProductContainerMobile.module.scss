@@ -1,0 +1,96 @@
+@import "../../../../../../styles/themes/light-theme";
+
+.containerBundleProductMobile {
+  border: 1px solid #bcc2ce;
+  border-radius: 8px;
+
+  & p {
+    margin: 0;
+    font-family: "Poppins";
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  & .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 1rem 1rem;
+
+    & .labelSaveCost {
+      background-color: $quinary-2;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px 0 0 8px;
+
+      & p {
+        color: $secondary-13;
+      }
+    }
+  }
+
+  .content::-webkit-scrollbar {
+    display: none;
+  }
+
+  & .content {
+    margin-left: 1rem;
+    display: flex;
+    gap: 0.7rem;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    & .productContainer {
+      min-width: 80px;
+      max-width: 90px;
+
+      & .productImage {
+        width: fit-content;
+        border: 1px solid #bcc2ce !important;
+        border-radius: 8px;
+        padding: 2px;
+        margin-bottom: 5px;
+      }
+
+      & p {
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    & .productContainer:last-child {
+      margin-right: 0.5rem;
+    }
+  }
+
+  & .summary {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p:nth-child(1) {
+      color: #dc2626;
+      background-color: #fef2f2;
+      padding: 4px 8px;
+      font-weight: 500;
+    }
+
+    p:nth-child(2) {
+      color: #adadad;
+      font-size: 12px;
+      text-decoration: line-through;
+    }
+
+    p:nth-child(3) {
+      color: $secondary-1;
+      font-size: 14px;
+    }
+  }
+}

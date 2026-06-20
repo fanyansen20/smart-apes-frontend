@@ -1,0 +1,26 @@
+@import "../../../../../../styles/themes/light-theme";
+
+.faqContentContainer {
+  border-radius: 0.5rem;
+  background-color: $secondary-12;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & .headingContent {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+.isClose {
+  @extend .faqContentContainer;
+  background-color: $secondary-13;
+  border: 1px solid $secondary-8;
+}

@@ -1,0 +1,15 @@
+.drawerPanel {
+  border-radius: 8px 8px 0 0;
+
+  & .panelContainer {
+    padding: 16px 20px;
+    text-align: left;
+
+    & .panelHeaderText {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0.20000000298023224px;
+    }
+  }
+}

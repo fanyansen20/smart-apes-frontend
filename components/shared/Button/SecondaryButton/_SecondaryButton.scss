@@ -1,0 +1,15 @@
+.secondary-button {
+  @include buttonStyleSMA(
+    $textColor: $primary-1,
+    $borderColor: $primary-1,
+    $backGroundColor: $secondary-13
+  );
+}
+
+.secondary-button-color-secondary {
+  @include buttonStyleSMA($textColor: $secondary-1, $borderColor: $secondary-1);
+}
+
+.Mui-disabled {
+  border-color: $secondary-10;
+}

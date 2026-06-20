@@ -1,0 +1,92 @@
+.floatingImage {
+  position: absolute;
+}
+
+.wrapperPaymentSuccessMember {
+  margin-top: -11rem;
+
+  overflow: hidden;
+  & .wrapperImg {
+    position: relative;
+  }
+
+  & .rightPlanet {
+    position: absolute;
+    right: -186px;
+    top: -165px;
+  }
+
+  & .leftPlanet {
+    position: absolute;
+    left: -186px;
+    bottom: -100px;
+  }
+
+  & .payment {
+    padding: 1rem 0 238px;
+  }
+
+  & .cardPayment {
+    * {
+    }
+    width: 504px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    & .paymentTextTitle {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 42px;
+      color: #333333;
+    }
+
+    & .paymentTextDescription {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 600;
+      color: #9f9f9f;
+    }
+  }
+
+  & .buttonPayment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+
+    & .buttonDetail {
+      width: 272px;
+      border: 1px solid $primary-1;
+      background-color: $primary-1;
+      border-radius: 5px;
+      color: $secondary-13;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: none;
+      }
+    }
+
+    & .buttonBack {
+      width: 272px;
+      margin-top: 10px;
+      border: 1px solid #dbdbdb;
+      background-color: $secondary-13;
+      border-radius: 5px;
+      color: $primary-1;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: none;
+      }
+    }
+  }
+}

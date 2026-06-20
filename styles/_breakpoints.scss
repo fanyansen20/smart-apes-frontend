@@ -1,0 +1,23 @@
+$breakpoints: (
+  "xs": 0px,
+  "sm": 600px,
+  "md": 768px,
+  "lg": 1280px,
+  "xl": 1440px,
+) !default;
+
+@mixin media($breakpoint...) {
+  // If the key exists in the map
+  @each $bp in $breakpoint {
+    @if map-has-key($breakpoints, $bp) {
+      // Prints a media query based on the value
+      @media (min-width: map-get($breakpoints, $bp)) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin maxWidthMarketPlace() {
+  max-width: 600px;
+}

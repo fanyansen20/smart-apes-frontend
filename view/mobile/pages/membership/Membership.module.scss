@@ -1,0 +1,230 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.membershipContainer {
+  padding: 16px 20px;
+  padding-bottom: 0;
+
+  & .dividerPageSection {
+    margin: 24px 0;
+    border-width: 4px;
+    border-color: $grey-0;
+  }
+
+  & .secondarySection {
+    background-color: $grey-0;
+    margin: 0 -20px;
+    padding: 10px 20px;
+  }
+
+  & .memberHighlight {
+    color: $brand-500;
+    display: inline-flex;
+    margin-right: 10px;
+
+    &::after {
+      position: absolute;
+      margin-top: 22px;
+      content: url("../../assets/icons/member-highlight.svg");
+    }
+  }
+
+  & .pageHeader {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 45px !important;
+    letter-spacing: -0.03em !important;
+  }
+
+  & .sectionTitle {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: $brand-500;
+    line-height: 19.12px !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase;
+  }
+
+  & .sectionHeader {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 36px !important;
+  }
+
+  & .sectionDescInfo {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  & .sectionList {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 24px !important;
+    text-align: left;
+  }
+
+  & .membershipBenefitBanner {
+    padding: 20px !important;
+    padding-top: 0;
+  }
+
+  & .pricingPlanSection {
+    margin: 0 -20px !important;
+
+    & .swiperPricingPlan {
+      width: 100%;
+      height: 100%;
+      padding: 2px 22px !important;
+
+      & slide {
+        gap: 20px !important;
+        border-radius: 8px !important;
+        border: 1px solid $grey-200;
+        background-color: $text-0;
+
+        /* Center slide text vertically */
+        width: 83vw;
+        height: fit-content;
+        margin-bottom: 60px !important;
+
+        & hr {
+          border-width: 2px !important;
+          border-color: $grey-0;
+        }
+
+        & .mostPopular {
+          color: $text-0;
+          font-weight: 700 !important;
+          font-size: 13.18px !important;
+          border-top-left-radius: 7.3px !important;
+          border-top-right-radius: 7.3px !important;
+          line-height: 19.76px !important;
+          transition: 0.3s ease;
+          padding: 9.06px 8.24px !important;
+          // border: 1px solid $warning-500;
+          background-color: $warning-500;
+        }
+
+        & .tierBadge {
+          width: 98.82px !important;
+          height: 98.82px !important;
+          transition: 0.3s ease;
+        }
+
+        & .membershipPrice {
+          font-size: 24.71px !important;
+          font-weight: 600 !important;
+          line-height: 37.06px !important;
+          letter-spacing: 0.02em !important;
+          transition: 0.3s ease;
+        }
+
+        & .yearPeriodText {
+          font-size: 13.18px !important;
+          font-weight: 600 !important;
+          line-height: 19.76px !important;
+          letter-spacing: 0.02em !important;
+          transition: 0.3s ease;
+        }
+
+        & .purchaseBtnText {
+          font-size: 11.53px !important;
+          font-weight: 700 !important;
+          transition: 0.3s ease;
+        }
+
+        & .planHeaderList {
+          text-align: left;
+          font-size: 13.18px !important;
+          font-weight: 700 !important;
+          line-height: 19.76px !important;
+          transition: 0.3s ease;
+        }
+
+        & .planListText {
+          font-size: 12px !important;
+          font-weight: 500 !important;
+          line-height: 18px !important;
+          transition: 0.3s ease;
+        }
+
+        &:has(p.mostPopular) {
+          border: 1px solid $warning-500;
+        }
+
+        &:has(div.active) {
+          & .mostPopular {
+            font-size: 14px !important;
+            line-height: 24px !important;
+            transition: 0.3s ease;
+          }
+
+          & .tierBadge {
+            width: 120px !important;
+            height: 120px !important;
+            transition: 0.3s ease;
+          }
+
+          & .membershipPrice {
+            font-size: 30px !important;
+            font-weight: 600 !important;
+            line-height: 45px !important;
+            letter-spacing: 0.02em !important;
+            transition: 0.3s ease;
+          }
+
+          & .yearPeriodText {
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            line-height: 24px !important;
+            letter-spacing: 0.02em !important;
+            transition: 0.3s ease;
+          }
+
+          & .purchaseBtnText {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            transition: 0.3s ease;
+          }
+
+          & .planHeaderList {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            line-height: 21px !important;
+            transition: 0.3s ease;
+          }
+
+          & .planListText {
+            font-size: 13.18px !important;
+            font-weight: 500 !important;
+            line-height: 19.76px !important;
+            transition: 0.3s ease;
+          }
+        }
+      }
+
+      & .cardSlide {
+        padding: 24px;
+        gap: 20px;
+        border-radius: 8px;
+        border: 1px solid $grey-200;
+        background-color: $text-0;
+
+        /* Center slide text vertically */
+        width: 81vw;
+        height: auto;
+        margin-bottom: 60px;
+        & hr {
+          border-width: 4px;
+          border-color: $grey-0;
+        }
+      }
+    }
+  }
+}
+
+.bulletSlideActive {
+  opacity: unset !important;
+  background: $brand-500 !important;
+}

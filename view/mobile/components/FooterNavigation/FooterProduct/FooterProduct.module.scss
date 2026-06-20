@@ -1,0 +1,296 @@
+@import "../../../../../styles/themes/light-theme-v2";
+
+.footerNavbarProduct {
+  z-index: 99;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 768px;
+
+  & button:last-child {
+    min-width: 200px;
+    background-color: $brand-500;
+    color: $text-0;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+}
+
+.containerDrawer {
+  padding: 1rem 0.62rem;
+
+  & p {
+    margin: 0;
+  }
+
+  & .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h1 {
+      margin: 0;
+      color: $text-500;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+  }
+
+  & .productOverview {
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+
+    & img {
+      border: 1px solid $text-100 !important;
+      border-radius: 8px !important;
+    }
+
+    & .prices {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 3px;
+
+      & .discountPercentage {
+        border-radius: 0.125rem;
+        background: $error-100;
+        padding: 0 0.3rem;
+        color: $error-500;
+        font-size: 0.625rem;
+        font-weight: 500;
+      }
+
+      & .discountPlus {
+        font-size: 12px;
+        font-weight: 500;
+        color: $grey-300;
+      }
+
+      .discountMemberPercentage {
+        @extend .discountPercentage;
+
+        background-color: $brand-0;
+        color: $brand-500;
+      }
+
+      & .basePrice {
+        color: $text-100;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-decoration: line-through;
+      }
+
+      & .price {
+        color: $text-500;
+        font-size: 0.875rem;
+        font-weight: 700;
+      }
+    }
+
+    & .stock {
+      color: $text-500;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+
+  & .containerVariants {
+    max-height: 80vh;
+    overflow: auto;
+
+    & > p:first-child {
+      margin-bottom: 8px;
+    }
+
+    & p {
+      font-size: 12px;
+      font-weight: 600;
+      text-align: left;
+      color: $text-500;
+    }
+
+    & .textRed {
+      font-weight: 700;
+      color: $error-500;
+      margin-bottom: 8px;
+    }
+
+    & .containerExpansion {
+      margin-top: 8px;
+      border: 1px solid $grey-200;
+      border-radius: 8px;
+      padding: 12px;
+
+      & .content {
+        padding: 16px 0;
+
+        & .variantSelection {
+          margin-bottom: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+
+          & .badge {
+            margin-right: 5px;
+          }
+
+          & button {
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 4px;
+          }
+
+          & button:hover {
+            opacity: 1;
+          }
+
+          & .btnActive {
+            background-color: $brand-500;
+            & p {
+              color: $text-0;
+            }
+
+            & img {
+              filter: invert(100%) sepia(49%) saturate(3030%) hue-rotate(178deg)
+                brightness(132%) contrast(108%);
+            }
+          }
+
+          & .dangerIcon {
+            margin-right: 4px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        & .variantQty {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & .priceTitle {
+            color: $sec-text-500;
+            font-weight: 400;
+          }
+
+          & .prices {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            & .basePrice {
+              color: $text-200;
+              text-decoration: line-through;
+            }
+          }
+
+          & .emptyStock {
+            font-size: 14px;
+            font-weight: 700;
+            color: $error-500;
+          }
+        }
+      }
+    }
+
+    & .expansionTitle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      & img {
+        border-radius: 8px;
+        background-color: $grey-100;
+        object-fit: contain;
+      }
+
+      & .titleText {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        color: $text-500;
+      }
+
+      & .badge {
+        margin-left: 3px;
+      }
+    }
+  }
+
+  & .containerVariants::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  & .containerVariants {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  & .minOrder {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $sec-text-500;
+    text-align: left;
+  }
+
+  & .quantity {
+    text-align: left;
+
+    & h2 {
+      margin: 0;
+      color: $text-900;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    & button {
+      width: 2rem;
+      min-width: 2rem;
+      height: 2rem;
+      min-height: 2rem;
+    }
+
+    & div {
+      height: 2rem !important;
+    }
+
+    & input {
+      color: $text-500;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.btnProceed {
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+.btnApplyVariant {
+  padding: 12px;
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+.btnAddCartMobile {
+  background-color: $grey-0;
+  width: 100%;
+
+  & button {
+    width: 100%;
+    border-radius: 0;
+    height: 4rem;
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../../../styles/themes/light-theme-v2";
+@import "../../components/NavbarMobile/NavbarMobile.module.scss";
+
+.membershipCheckoutPage {
+  padding: 0 20px;
+  text-align: left;
+
+  & input + svg {
+    color: $brand-500;
+  }
+
+  & hr {
+    border-width: 4px;
+    border-color: $grey-0;
+    margin: 0 -20px;
+  }
+
+  & .membershipPlanText {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 20px !important;
+  }
+
+  & .sectionTitle {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 24px !important;
+  }
+
+  & .sectionList {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+  }
+
+  & .selectOptionsText {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 12px !important;
+    letter-spacing: 0.20000000298023224px !important;
+  }
+
+  & .smallText {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    line-height: 15px !important;
+  }
+
+  & .highlightText {
+    color: $brand-500;
+  }
+}
+.btnOptionsList {
+  color: $text-500;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 12px !important;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 12px 20px !important;
+  margin: -12px -20px;
+}
+
+.paymentMethodText {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 12px !important;
+  letter-spacing: 0.20000000298023224px !important;
+}
+
+.totalLabelText {
+  @extend .paymentMethodText;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+}

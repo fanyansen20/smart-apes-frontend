@@ -1,0 +1,21 @@
+@import "../../../../../../styles/themes/light-theme";
+
+.speedDialContainer {
+  position: fixed;
+  bottom: 80px;
+  right: 16px;
+
+  & .speedDialMainBtn {
+    background-color: $primary-1;
+  }
+
+  & .speedDialOpenBtn {
+    background-color: $secondary-13;
+    border: 2px solid $primary-1;
+  }
+
+  & .speedDialActionBtn {
+    width: 56px;
+    height: 56px;
+  }
+}

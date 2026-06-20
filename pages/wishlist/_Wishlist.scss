@@ -1,0 +1,25 @@
+.container-wishlist {
+  padding: 10px 0 30px;
+
+  & .header-content {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  & .card-wishlist-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+    & .card-item {
+      margin: 0 auto;
+    }
+  }
+
+  & .container-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1.8rem 0;
+  }
+}

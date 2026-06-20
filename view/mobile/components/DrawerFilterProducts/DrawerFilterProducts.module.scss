@@ -1,0 +1,115 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.containerDrawerProducts {
+  padding: 16px 10px;
+
+  & .btnFilter {
+    border: 1px solid $grey-200;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    color: $text-500;
+  }
+
+  & .btnFilter:hover {
+    opacity: 1;
+  }
+
+  & .btnFilter__active {
+    @extend .btnFilter;
+    border: 1px solid $brand-500;
+    background-color: $brand-0;
+    color: $brand-500;
+  }
+
+  & .btnFilter__active:hover {
+    opacity: 1;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  & .drawerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-900;
+    }
+
+    & svg {
+      color: $text-900;
+    }
+  }
+
+  & .containerFilterType {
+    margin-top: 20px;
+
+    & .header {
+      font-size: 12px;
+      font-weight: 700;
+      color: $text-900;
+      text-align: left;
+      margin-bottom: 10px;
+
+      & .level {
+        color: $text-200;
+      }
+    }
+
+    & .chipsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 10px;
+
+      & .star {
+        color: $warning-200;
+        font-size: 16px;
+      }
+    }
+
+    & .priceRange {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+
+      & input {
+        font-size: 12px;
+      }
+
+      & h6 {
+        margin: 0;
+        padding-right: 6px;
+      }
+
+      & p {
+        height: 34px;
+        display: flex;
+        align-items: center;
+        margin: 0 8px;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $text-0;
+  width: 100%;
+
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  margin-top: 35px;
+  padding: 12px 10px;
+  display: flex;
+  gap: 8px;
+
+  & button:hover {
+    opacity: 1;
+  }
+}

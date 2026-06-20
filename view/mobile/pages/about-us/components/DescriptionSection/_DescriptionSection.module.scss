@@ -1,0 +1,12 @@
+@import "../../AboutUs.module";
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.officeImage {
+  & img {
+    border-radius: 1rem;
+  }
+}
+
+.image {
+  margin: 0 1rem;
+}

@@ -1,0 +1,159 @@
+@use "styles/themes/_light-theme" as *;
+@use "styles/breakpoints";
+
+$font-family: "Poppins";
+
+@mixin debugLayout($borderColor: red, $backgroundColor: transparent) {
+  border: 1px solid $borderColor;
+  background-color: $backgroundColor;
+}
+
+* {
+  font-family: $font-family !important;
+}
+
+.MuiButtonBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26) !important;
+  & p {
+    color: rgba(0, 0, 0, 0.26) !important;
+  }
+}
+
+.disabled-content {
+  opacity: 0.6 !important;
+}
+
+.MuiButtonBase-root {
+  text-transform: none;
+}
+
+.Mui-selected {
+  & .tabIcon {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(72%) saturate(1603%)
+      hue-rotate(236deg) brightness(101%) contrast(92%);
+  }
+}
+
+.MuiBottomNavigationAction-label {
+  font-family: $font-family !important;
+}
+
+.disabledText {
+  color: $secondary-6;
+}
+
+// Image viewer style
+@import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+
+// COMPONENTS SCSS----------------------------------------------------------------------------------------------------------
+@import "../components/carousel/HomePageCarousel/HomePageCarousel.module";
+@import "../components/checkbox/PurpleCheckBox/PurpleCheckBox.module";
+@import "../components/footer/footer";
+@import "../components/input/SearchInput";
+@import "../components/link/HomePageLink.module";
+
+// COMPONENTS BUTTON SCSS
+@import "../components/buttons/QuantityButton/QuantityButton";
+
+// COMPONENTS CARD SCSS
+@import "../components/card/CategoryCard/CategoryCard";
+@import "../view/desktop/components/card/CardStore/CardStore";
+
+// COMPONENTS NAVIGATION SCSS
+@import "../components/Navigation/NavigationParts/LowerNavigation/LoginRegisterButton/LoginRegisterButton";
+@import "../components/Navigation/NavigationParts/LowerNavigation/NavigationCategories/NavigationCategories.module";
+@import "../components/Navigation/NavigationParts/LowerNavigation/UserMenu/UserMenu";
+@import "../components/Navigation/NavigationParts/LowerNavigation/LowerNavigation";
+@import "../components/Navigation/NavigationParts/UpperNavigation/UpperNavigation.module";
+@import "../components/Navigation/Navbar.module";
+
+// COMPONENT SHARED
+@import "../components/shared/Button/button";
+@import "../components/shared/Alert/AlertComponents";
+@import "../components/shared/Button/PrimaryButton/PrimaryButton";
+@import "../components/shared/Button/SecondaryButton/SecondaryButton";
+@import "../components/shared/Button/TextButton/TextButton";
+@import "../components/shared/FilterSideBar/FilterSideBar";
+@import "../components/shared/Modal/ModalPaymentMethod/ModalPaymentMethod";
+@import "../components/shared/Modal/ModalConfirmationAlerts/ModalConfirmationAlerts";
+@import "../components/shared/TextBox/TextBox";
+@import "../components/dateRangePickerComp/DateRangePickerComp";
+
+// COMPONENT MODAL
+@import "../components/modal/ModalChangeAddress/ModalChangeAddress";
+@import "../components/modal/ModalAlertAddress/ModalAlertAddress";
+@import "../components//modal/ModalAddAddress/ModalAddAddress";
+@import "../components/modal/ModalSplitPackages/ModalSplitPackages";
+@import "../components/menu/MenuDeliveryService/MenuDeliveryService";
+@import "../components/modal/ModalShareProduct/ModalShareProduct";
+
+// COMPONENTS SHOP
+@import "../components/shop/ShopHeader/ShopHeader";
+@import "../components/shop/ShopRating/ShopRating";
+@import "../components/shop/ShopDetailModal/ShopDetailModal";
+
+// COMPONENTS GALLERY IMAGE PRODUCT
+@import "../components/galleryImageProduct/GalleryImageProduct";
+
+// LAYOUT SCSS----------------------------------------------------------------------------------------------------------
+// CART PAGE SCSS
+@import "../components/layout/ContainerProductsCard/ContainerProductsCard";
+@import "../layout/CartPage/EmptyCart/EmptyCart.module";
+
+// Filter Side Bar
+@import "../layout/FilteringLayout/FilterSideBar/SideBarFiltering";
+
+// HOMEPAGE SCSS----------------------------------------------------------------------------------------------------------
+@import "../pages/Homepage.module";
+@import "../layout/Homepage/Banner/BannerCarousel/BannerCarousel";
+@import "../layout/Homepage/Banner/HeroBanner/HeroBanner";
+@import "../layout/Homepage/Benefits/Benefits.module";
+@import "../components/layout/TenProductSection/TenProductSection";
+@import "../layout/Homepage/FeaturedBrand/FeaturedBrand";
+@import "../layout/Homepage/FeaturedOn/FeaturedOn";
+@import "../layout/Homepage/TopTutor/TopTutor.module";
+@import "../layout/Homepage/TopTutor/TopTutorDetails/TopTutorDetails.module";
+@import "../layout/Homepage/TopTutor/TopTutorOrbit/TopTutorOrbit.module";
+@import "../components/layout/BestSellerProduct/BestSellerProduct";
+
+// REGISTER
+@import "../layout/Register/EmailForm/UserForm/UserForm.module";
+@import "../layout/Register/WaitingConfirmationEmail/WaitingConfirmationEmail";
+@import "../layout/Register/TermAndCondition/TermAndCondition";
+
+// PAGES SCSS------------------------------------------------------------------------------------------------------
+// NOT FOUND PAGE
+@import "../pages/404";
+
+// AUTH
+@import "../pages/login/LoginPage.module";
+@import "../pages/forgot-password/ForgotPassword.module";
+
+// SHOP PAGE-----------------------------------------------------------------------------------------------
+@import "../pages/[shop]/ProductPage";
+
+// CATALOG PAGE
+@import "../pages/category/CatalogLevelOne";
+@import "../pages/category/[slug1]/CatalogLevelTwo";
+
+// Contact Us
+@import "../pages/contact-us/ContactUs";
+
+// CART PAGES----------------------------------------------------------------------------------------------
+@import "../pages/cart/CartPage";
+@import "../view/desktop/pages/checkout-page/CheckoutPage";
+
+// PAYMENT PAGE-----------------------------------------------------------------------------------------------
+@import "../pages/payment/paymentPage";
+
+// PRE ASSESSMENT
+@import "../pages/pre-assessment/PreAssessment";
+
+// WISHLIST
+@import "../pages/wishlist/Wishlist";
+
+// MEMBERSHIP
+@import "../pages/membership/Membership";
+@import "../pages/membership/checkout/MemberCheckoutPage";
+@import "../pages/membership/checkout/success/PaymentMembershipSuccess.module";
+@import "../pages/membership/member-details/MemberDetailsPage";

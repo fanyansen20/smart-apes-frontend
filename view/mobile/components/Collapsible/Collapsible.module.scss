@@ -1,0 +1,33 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.containerCollapsible {
+  & .cardCollapse {
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
+
+  & .toggleSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & button {
+      border: none;
+      padding: 0;
+    }
+
+    & button:hover {
+      opacity: 1;
+    }
+
+    & p {
+      font-size: 12px;
+      font-weight: 400;
+      color: $brand-500;
+    }
+
+    & svg {
+      color: $brand-500;
+    }
+  }
+}

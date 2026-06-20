@@ -1,0 +1,63 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.memberDetails {
+  padding: 16px 20px;
+  background-color: $grey-0;
+  text-align: left;
+
+  & .memberDetailsCard {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid $grey-200;
+
+    hr {
+      border-color: $grey-50;
+    }
+
+    & .cardPrimaryTitle {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+
+    & .cardSecondaryTitle {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    & .cardDetailValue {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+
+    & .activeChip {
+      background-color: $success-300;
+
+      span {
+        @extend .cardDetailValue;
+      }
+    }
+
+    & .cardDetailLabel {
+      color: $text-200;
+      @extend .cardDetailValue;
+    }
+
+    & .basicMemberText {
+      color: $text-300;
+      @extend .cardDetailValue;
+    }
+
+    & .premiumMemberText {
+      color: #e4cf8b;
+      @extend .cardDetailValue;
+    }
+
+    & .eliteMemberText {
+      color: $brand-500;
+      @extend .cardDetailValue;
+    }
+  }
+}

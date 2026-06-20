@@ -1,0 +1,52 @@
+@import "../../../../../styles/themes/light-theme-v2";
+
+.bottomNav {
+  justify-content: space-between;
+}
+
+.textLabel {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.purchaseBtn {
+  background-color: $brand-500;
+  max-width: none;
+  flex: 1;
+
+  & span {
+    @extend .textLabel;
+    color: $text-0;
+  }
+}
+
+.purchaseBtn:disabled {
+  background-color: $grey-0;
+
+  & span {
+    color: $text-200;
+  }
+}
+
+.addCartBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  & span {
+    @extend .textLabel;
+    color: $brand-500;
+  }
+}
+
+.addCartBtn:disabled {
+  background-color: $grey-0;
+
+  & img {
+    filter: grayscale(100%);
+  }
+
+  & span {
+    color: $text-200;
+  }
+}

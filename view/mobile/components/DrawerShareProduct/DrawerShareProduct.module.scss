@@ -1,0 +1,86 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.drawerShareProduct {
+  & .product {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: $grey-50;
+    border: 1px solid $grey-200;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+
+    & h3,
+    h5 {
+      margin: 0;
+    }
+
+    & h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-500;
+      word-break: break-all;
+    }
+
+    & h5 {
+      font-size: 12px;
+      font-weight: 600;
+      color: $text-200;
+    }
+
+    & span {
+      flex-shrink: 0;
+    }
+
+    & img {
+      border: 1px solid $grey-200 !important;
+      border-radius: 8px;
+    }
+  }
+
+  & .subHeading {
+    font-size: 12px;
+    font-weight: 700;
+    color: $text-500;
+  }
+
+  & .shareButtons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    & > div {
+      flex-shrink: 0 !important;
+    }
+
+    & span {
+      padding: 0 !important;
+
+      & img {
+        width: 36px !important;
+        height: 42px !important;
+      }
+    }
+
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    & p {
+      font-size: 10px;
+      font-weight: 600;
+      color: $text-200;
+    }
+  }
+
+  & .shareButtons::-webkit-scrollbar {
+    display: none;
+  }
+}

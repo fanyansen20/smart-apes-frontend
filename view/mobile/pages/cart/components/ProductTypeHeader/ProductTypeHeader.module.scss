@@ -1,0 +1,27 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.productTypeHeader {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 16px 0;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: $text-0;
+
+  & span {
+    text-transform: capitalize;
+  }
+}
+
+.productTypeHeader__physical {
+  @extend .productTypeHeader;
+  background-color: $brand-500;
+}
+
+.productTypeHeader__digital {
+  @extend .productTypeHeader;
+  background-color: #ffb84c;
+}

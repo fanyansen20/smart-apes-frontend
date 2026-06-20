@@ -1,0 +1,163 @@
+@use "styles/breakpoints";
+
+.animationGrid {
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+  z-index: 3;
+  @include breakpoints.media(xs) {
+    display: none;
+  }
+
+  @include breakpoints.media(lg) {
+    display: flex;
+  }
+
+  & .astrounut {
+    position: absolute;
+    bottom: -75px;
+    right: 300px;
+    z-index: 0;
+  }
+  & .ellipseTopTutor {
+    position: absolute;
+    bottom: 63px;
+    right: 190px;
+    z-index: 0;
+  }
+}
+
+.animationContainer {
+  position: relative;
+}
+.orbit .centerImage {
+  width: 100px;
+  position: absolute;
+  z-index: 10;
+}
+.orbit ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  list-style: none;
+  z-index: 1;
+  transform-origin: center;
+  animation: orbit 60s linear infinite;
+}
+.orbit ul:hover {
+  animation-play-state: paused;
+  --orbit-play-state: paused;
+  cursor: pointer;
+}
+.orbit li {
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-weight: 500;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.orbit li:hover {
+  --throb-play-state: paused;
+}
+.orbit li:nth-child(1) {
+  --throb-delay: 0ms;
+}
+.orbit li:nth-child(2) {
+  --throb-delay: 500ms;
+}
+.orbit li:nth-child(3) {
+  --throb-delay: 1000ms;
+}
+.orbit li:nth-child(4) {
+  --throb-delay: 1500ms;
+}
+.orbit li:nth-child(5) {
+  --throb-delay: 2000ms;
+}
+.orbit li:nth-child(6) {
+  --throb-delay: 2500ms;
+}
+.orbit li:nth-child(7) {
+  --throb-delay: 3000ms;
+}
+.orbit li:nth-child(8) {
+  --throb-delay: 3500ms;
+}
+.orbit li > * {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit 60s linear reverse infinite,
+    throb 1s var(--throb-delay) ease-in-out infinite alternate;
+  animation-play-state: var(--orbit-play-state, running),
+    var(--throb-play-state, running);
+}
+
+.orbit li:nth-child(1) {
+  transform: translate(0);
+  top: -104.42%;
+  left: 14.45%;
+}
+.orbit li:nth-child(2) {
+  transform: translate(0);
+  top: -70.85%;
+  left: -67.86%;
+}
+.orbit li:nth-child(3) {
+  transform: translate(0);
+  top: 12.56%;
+  left: -104.97%;
+}
+.orbit li:nth-child(4) {
+  transform: translate(0);
+  top: 100.3%;
+  left: -70.85%;
+}
+.orbit li:nth-child(5) {
+  transform: translate(0);
+  top: 134.42%;
+  left: 14.45%;
+}
+.orbit li:nth-child(6) {
+  transform: translate(0);
+  top: 100.3%;
+  left: 99.75%;
+}
+.orbit li:nth-child(7) {
+  transform: translate(0);
+  top: 12.56%;
+  left: 136.31%;
+}
+.orbit li:nth-child(8) {
+  transform: translate(0);
+  top: -70.3%;
+  left: 99.75%;
+}
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.04;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.containerModalConfirmAlert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  max-height: 80vh;
+  overflow: auto;
+  background-color: $secondary-13;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+
+  & .titleModalConfirmAlert {
+    color: $secondary-1;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  & .dialogBoxModalConfirmAlert {
+    font-weight: 600;
+    font-size: 16px;
+    color: $secondary-8;
+    margin-bottom: 40px;
+  }
+}

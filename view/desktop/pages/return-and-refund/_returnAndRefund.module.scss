@@ -1,0 +1,84 @@
+@import "../../../../styles/themes/light-theme";
+
+.titleText {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.primaryText {
+  color: $primary-1;
+}
+
+.textBody {
+  font-size: 1.1rem;
+  color: $secondary-4;
+}
+
+.textBodyBold {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.containerHeroBanner {
+  position: relative;
+  padding: 2rem 0;
+
+  & .yupPlanetBg {
+    position: absolute;
+    left: -7%;
+    bottom: -15%;
+    width: 162.47px;
+    height: 94.49px;
+  }
+}
+
+.imageLayout {
+  position: relative;
+  width: 12.5rem;
+  aspect-ratio: 1;
+  mix-blend-mode: multiply;
+}
+
+.containerNeedHelpSection {
+  margin-top: 40px;
+  background-color: wheat;
+  height: 296px;
+  background: transparent
+    url("../../../../public/assets/images/return-and-refund/banner-help-section.svg")
+    no-repeat center;
+  background-size: contain;
+
+  & .titleSection {
+    color: $secondary-13;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  & .textSection {
+    color: $secondary-13;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+    & .textLink {
+      text-decoration: underline;
+      color: $primary-1;
+    }
+  }
+
+  & .dividerSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    color: $secondary-13;
+    font-size: 0.9rem;
+    margin: 1.4rem;
+    width: 23rem;
+
+    & .horizontalDivider {
+      width: 100%;
+      height: 1px;
+      background-color: $secondary-6;
+    }
+  }
+}

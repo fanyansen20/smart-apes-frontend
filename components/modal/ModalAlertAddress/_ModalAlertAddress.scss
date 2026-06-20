@@ -1,0 +1,38 @@
+.containerModalAlertAddress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  max-height: 80vh;
+  overflow: auto;
+  background-color: $secondary-13;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+
+  & .containerImageAlert {
+    position: relative;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  & .contentContainer {
+    text-align: center;
+    & .MuiTypography-h6 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    & .MuiTypography-body2 {
+      color: #c5c5c5;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    & .MuiButton-contained {
+      margin-top: 10px;
+      background-color: $primary-1;
+    }
+  }
+}

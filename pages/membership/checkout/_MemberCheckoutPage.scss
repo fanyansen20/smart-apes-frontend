@@ -1,0 +1,214 @@
+.containerMemberCheckout {
+  overflow: hidden;
+  margin-top: -2rem;
+
+  & .breadcrumb {
+    background-color: #f3f7fa;
+    margin-bottom: 2rem;
+
+    & img {
+      cursor: pointer;
+    }
+
+    & nav > ol {
+      & li:first-child {
+        display: flex;
+      }
+    }
+
+    & p {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $secondary-4;
+      cursor: pointer;
+    }
+
+    & .active {
+      font-weight: 600;
+      color: $secondary-1;
+      cursor: default;
+    }
+  }
+
+  & .leftMemberCheckout {
+    & .selectedPlan {
+      border: 1px solid $secondary-10;
+      border-radius: 5px;
+      text-align: left;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      & h4 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $secondary-1;
+      }
+
+      & > h4 {
+        font-weight: 700;
+      }
+
+      & .productTitle {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      & hr {
+        margin: 1rem 0;
+        border: none;
+        border-bottom: 1px solid $secondary-9;
+      }
+
+      & p {
+        font-weight: 700;
+      }
+
+      & .perk {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        & p {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 500;
+          color: $secondary-1;
+        }
+      }
+    }
+
+    & .paymentSelection {
+      background-color: $secondary-13;
+      border: 1px solid $secondary-10;
+      border-radius: 5px;
+      text-align: left;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      & h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $secondary-1;
+      }
+
+      & .paymentBtn {
+        border: 1px solid $secondary-10;
+        border-radius: 5px;
+
+        & .paymentMethod {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        & p {
+          display: flex;
+          align-items: center;
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $secondary-1;
+        }
+
+        & .proceedArrow {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          & svg {
+            color: $secondary-1;
+          }
+        }
+      }
+    }
+  }
+
+  & .memberPaymentDetail {
+    border: 1px solid $secondary-10;
+    border-radius: 5px;
+    text-align: left;
+
+    & .memberPaymentHeader {
+      padding: 1rem;
+      color: $secondary-13;
+      background-color: $primary-1;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 5px 5px 0 0;
+    }
+
+    & .memberPaymentContent {
+      padding: 1rem;
+      position: relative;
+      z-index: 2;
+      background-color: $secondary-13;
+
+      & hr {
+        border: none;
+        border-bottom: 1px dashed $secondary-9;
+        margin-bottom: 1rem;
+      }
+
+      & .paymentItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        & p {
+          margin: 0;
+        }
+
+        & .paymentLabel {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $secondary-4;
+        }
+
+        & .paymentContent {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $secondary-1;
+        }
+      }
+
+      & .memberDisclaimer {
+        display: flex;
+        align-items: flex-start;
+
+        & .MuiCheckbox-colorPrimary.Mui-checked {
+          color: $primary-1 !important;
+        }
+
+        & p {
+          font-size: 0.75rem;
+          font-weight: 500;
+          color: $secondary-4;
+        }
+      }
+
+      & .btnProceed {
+        margin-top: 1rem;
+        background-color: $primary-1;
+        color: $secondary-13;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 0.7rem 0;
+      }
+
+      & .btnPending {
+        margin-top: 1rem;
+        border: 1px solid $secondary-9;
+        color: $primary-1;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 0.7rem 0;
+      }
+    }
+  }
+}

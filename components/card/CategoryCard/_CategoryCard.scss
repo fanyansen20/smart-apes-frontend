@@ -1,0 +1,32 @@
+.categoryCard {
+  overflow: hidden;
+  position: relative;
+  height: 90px;
+  color: $secondary-1;
+  border: 1px solid $secondary-8;
+  box-shadow: 0px 2px 20px $secondary-10;
+  border-radius: 10px;
+  & .imageComingSoonFeature {
+    position: absolute;
+    width: 120px;
+    aspect-ratio: 1/1;
+    top: -28%;
+    right: -10%;
+  }
+
+  & .imageCategoryCardButton {
+    position: relative;
+    height: 50px;
+  }
+
+  & .textButtonCategory {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &:hover {
+    opacity: 0.6;
+    background-color: $secondary-11;
+    border: 2px solid $primary-1;
+  }
+}

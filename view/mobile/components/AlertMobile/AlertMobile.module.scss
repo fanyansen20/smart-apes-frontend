@@ -1,0 +1,39 @@
+@import "../../../../styles/themes/light-theme";
+
+.alertMobileContainer {
+  padding: 10px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $secondary-1;
+  border-radius: 8px;
+
+  & svg {
+    font-size: 20px;
+  }
+
+  & p {
+    font-size: 12px;
+    font-weight: 400;
+    color: $secondary-1;
+  }
+}
+
+.error {
+  border: 1px solid $tertiary-1;
+  background-color: $tertiary-7;
+
+  & svg {
+    color: $tertiary-1;
+  }
+}
+
+.warning {
+  border: 1px solid $quinary-3;
+  background-color: #fffaeb;
+
+  & svg {
+    color: $quinary-3;
+  }
+}

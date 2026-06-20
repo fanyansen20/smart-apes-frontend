@@ -1,0 +1,23 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.storeCard {
+  border: 1px solid $grey-200;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+
+  & h6 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $text-500;
+    margin: 0;
+    padding: 0;
+  }
+
+  & p {
+    font-size: 0.75rem;
+    color: $info-500;
+    margin: 0;
+    padding: 0;
+  }
+}

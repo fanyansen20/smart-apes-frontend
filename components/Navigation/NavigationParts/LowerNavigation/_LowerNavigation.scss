@@ -1,0 +1,116 @@
+.navBar {
+  padding: 20px 0;
+  max-height: 95px;
+  background-color: $secondary-13;
+  box-shadow: none;
+  justify-content: center;
+
+  & .buttonBecomeMember {
+    @include breakpoints.media(xs) {
+      display: none;
+    }
+    @include breakpoints.media(md) {
+      display: flex;
+    }
+
+    align-items: center;
+    margin-left: 10px;
+    background-color: $primary-1;
+    padding: 8px 10px;
+    border-radius: 5px;
+
+    & .imgAuthNavBarIcon {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      margin-right: 9px;
+    }
+    & .titleButtonBottom {
+      font-size: 12px;
+      font-weight: 500;
+      color: $secondary-13;
+    }
+    & .titleButtonBottom__active {
+      font-size: 12px;
+      font-weight: 500;
+      color: $primary-1;
+    }
+  }
+
+  & .buttonMember {
+    @include breakpoints.media(xs) {
+      display: none;
+    }
+    @include breakpoints.media(md) {
+      display: flex;
+    }
+
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid $primary-1;
+    padding: 8px 10px;
+    border-radius: 5px;
+
+    & .imgAuthNavBarIcon {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      margin-right: 9px;
+    }
+    & .titleButtonBottom {
+      font-size: 12px;
+      font-weight: 500;
+      color: $primary-1;
+    }
+  }
+
+  & .avatarHeader {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  //? Desktop Start
+  & .desktopNav {
+    & .categoryButton {
+      color: $secondary-2;
+      height: 35px;
+      & .categoryTitle {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.drawerMenuCategory {
+  z-index: 5;
+  .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: none;
+  }
+
+  .css-oqbj7d {
+    top: 127px;
+  }
+  .css-1nvnyqx-MuiPaper-root-MuiDrawer-paper {
+    top: 127px;
+    box-shadow: none;
+  }
+}
+
+//!==================================================================================================================================================================================================================================================================================================================================
+//? Mobile Start
+.mobileNav {
+  flex-grow: 1;
+  @include breakpoints.media(xs) {
+    display: flex;
+  }
+  @include breakpoints.media(md) {
+    display: none;
+  }
+}
+
+.mobileCategoryButton {
+  color: $primary-2;
+  margin-left: auto;
+}
+//? Mobile End

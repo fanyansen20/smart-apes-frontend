@@ -1,0 +1,14 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.headerContainer {
+  background-color: $brand-500;
+  padding: 1rem;
+  justify-content: center;
+  margin-top: -1rem;
+
+  & .headerTitle {
+    color: $text-0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

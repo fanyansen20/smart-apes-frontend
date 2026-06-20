@@ -1,0 +1,178 @@
+@import "../../../../styles/themes/light-theme";
+@import "../../../../styles/themes/light-theme-v2";
+
+.productItemText {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.infoDescText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.checkoutContainer {
+  padding: 16px 20px;
+  text-align: left;
+
+  & .pageHeaderText {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+  }
+
+  & .storePic {
+    width: 30px;
+    height: 30px;
+  }
+
+  & .storeName {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.20000000298023224px;
+  }
+
+  & .countryName {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  & .productListDivider {
+    border-width: 1px;
+    border-color: $grey-50;
+  }
+
+  & .productBundleCard {
+    padding: 8px;
+    border-radius: 8px;
+
+    & .productBundleTitle {
+      @extend .pageHeaderText;
+      line-height: 30px;
+    }
+
+    & .productBundleBasePrice {
+      @extend .productItemText;
+      color: $text-200;
+      text-decoration: line-through;
+    }
+
+    & .productBundleFinalPrice {
+      @extend .productItemText;
+    }
+
+    & .productBundleDiscountPercent {
+      display: flex;
+      align-items: center;
+      padding: 4px 8px;
+      color: $error-500;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12px;
+      border-radius: 2px;
+      letter-spacing: 0.20000000298023224px;
+      background-color: $error-0;
+    }
+
+    & .productBundleSavingPrice {
+      display: flex;
+      gap: 6px;
+      width: fit-content;
+      border-radius: 5px;
+      align-items: center;
+      padding: 4px 8px;
+      color: $text-0;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0.20000000298023224px;
+      background-color: $quinary-2;
+    }
+  }
+
+  & .checkoutSectionDivider {
+    border-width: 8px;
+    border-color: $grey-0;
+    margin: 0 -20px;
+  }
+
+  & .addressText {
+    @extend .productItemText;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  & .btnOptions {
+    padding: 8px 16px;
+    &.ninjavanDeliveryBtn {
+      padding-left: 0;
+    }
+
+    & img {
+      top: 2px;
+    }
+  }
+}
+
+.addressCard {
+  padding: 10px;
+  color: $text-900;
+  text-align: left;
+  border-radius: 8px;
+  border-color: $grey-200;
+  justify-content: flex-start;
+
+  &.addressCardActive {
+    border-color: $brand-500;
+  }
+
+  & .baseLabel {
+    @extend .productItemText;
+    font-size: 10px;
+    color: $text-0;
+    padding: 4px 16px;
+    border-radius: 2px;
+  }
+
+  & .typeLabel {
+    @extend .baseLabel;
+    background-color: $primary-4;
+  }
+
+  & .primaryLabel {
+    @extend .baseLabel;
+    background-color: $brand-500;
+  }
+}
+
+.btnOptionsList {
+  color: $text-500;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 12px 20px !important;
+  margin: -12px -20px;
+}
+
+.totalLabelText {
+  @extend .productItemText;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.primaryText {
+  color: $brand-500;
+}
+
+.infoText {
+  @extend .productItemText;
+  font-weight: 400;
+}

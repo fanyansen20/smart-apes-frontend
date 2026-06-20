@@ -1,0 +1,46 @@
+.loginRegisterDiv {
+  @include breakpoints.media(xs) {
+    display: none;
+  }
+  @include breakpoints.media(md) {
+    display: flex;
+  }
+  align-items: center;
+
+  & .signButton {
+    margin-left: 5px;
+    & .imgAuthNavBarIcon {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+    & .titleButton {
+      font-size: 12px;
+      font-weight: 700;
+      color: $secondary-2;
+    }
+  }
+
+  & .singUpButton {
+    @extend .signButton;
+    border: 1px solid $primary-1;
+    & .titleButton {
+      color: $primary-1;
+    }
+  }
+
+  & .buttonBecomeMember {
+    @extend .signButton;
+    background-color: $primary-1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    & .imgAuthNavBarIcon {
+      width: 18px;
+      height: 18px;
+    }
+    & .titleButtonBottom {
+      color: $secondary-13;
+    }
+  }
+}

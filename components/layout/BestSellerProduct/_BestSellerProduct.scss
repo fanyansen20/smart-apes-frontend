@@ -1,0 +1,29 @@
+.containerBestSellerProduct {
+  @extend .containerTenProductSection;
+  margin-top: 30px;
+
+  & .bestSellerHeader {
+    font-size: 26px;
+  }
+
+  & .containerCardBestSellerEducationMaterial {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    & .rows-two-item {
+      overflow: hidden;
+      border-radius: 10px 0px 0px 10px;
+      grid-area: 1 / 1 / 2 / 3;
+      height: 95%;
+
+      & img {
+        object-fit: contain;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}

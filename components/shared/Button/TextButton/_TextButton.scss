@@ -1,0 +1,7 @@
+.text-button {
+  @include buttonStyleSMA($textColor: $primary-1);
+}
+
+.text-button-color-secondary {
+  @include buttonStyleSMA($textColor: $secondary-1);
+}

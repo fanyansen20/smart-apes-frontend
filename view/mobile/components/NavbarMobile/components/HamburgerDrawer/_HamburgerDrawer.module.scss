@@ -1,0 +1,31 @@
+@import "../../../.././../../styles/themes/light-theme-v2";
+
+.containerHamburgerDrawer {
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+
+  & p {
+    padding: 0;
+    margin: 0;
+  }
+
+  & .listContainer {
+    width: 100%;
+    & .titleDrawer {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: $text-500;
+    }
+
+    & .subContent {
+      padding: 0.6rem 0;
+      font-weight: 700;
+      color: $text-500;
+    }
+
+    & .showBorder {
+      border-top: 4px solid $grey-0;
+    }
+  }
+}

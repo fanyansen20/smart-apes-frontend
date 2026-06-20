@@ -1,0 +1,62 @@
+.containerChips {
+  margin-top: 10px;
+  & .MuiChip-root {
+    margin: 5px;
+    padding: 0.7em;
+    background-color: $primary-1;
+    color: $secondary-13;
+    & .MuiChip-deleteIcon {
+      width: 15px;
+      aspect-ratio: 1/1;
+      color: $secondary-13;
+    }
+  }
+
+  & .MuiButton-text {
+    color: $primary-1;
+    padding: 0 0.7em;
+  }
+}
+
+.containerSortBy {
+  display: flex;
+  align-items: center;
+  & .MuiTypography-root {
+    color: $secondary-4;
+    margin-right: 10px;
+    font-weight: 700;
+  }
+
+  & .MuiSelect-select {
+    padding: 10px 0px 6px 22px;
+    & .MuiTypography-root {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+.tabProductSearch {
+  & .MuiTab-root {
+    color: $secondary-10;
+    font-weight: 500;
+    background-color: transparent;
+    border-bottom: 2px solid $secondary-10;
+    margin: 0 10px;
+  }
+
+  & .Mui-selected {
+    font-weight: 600;
+    background-color: transparent;
+    color: $primary-1;
+  }
+
+  & .MuiTabs-indicator {
+    background: $primary-1;
+  }
+}
+
+.skeletonGrid {
+  display: flex;
+  margin: 0 2px;
+}

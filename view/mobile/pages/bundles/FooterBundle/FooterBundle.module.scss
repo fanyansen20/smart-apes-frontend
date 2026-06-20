@@ -1,0 +1,188 @@
+@import "../../../../../styles/themes/light-theme-v2";
+
+.footerNavbar {
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 768px;
+
+  & button:last-child {
+    min-width: 200px;
+    background-color: $brand-500;
+    color: $text-0;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+}
+
+.containerDrawer {
+  & p {
+    margin: 0;
+  }
+
+  & .content {
+    & p:nth-child(1) {
+      font-size: 12px;
+      font-weight: 700;
+      text-align: left;
+      color: $text-100;
+      margin-bottom: 0.5rem;
+
+      & span {
+        color: $error-500;
+      }
+    }
+
+    & p:nth-child(2) {
+      font-size: 12px;
+      font-weight: 600;
+      text-align: left;
+      color: $text-500;
+      margin-bottom: 0.5rem;
+    }
+
+    & .variantDetails {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid $grey-200;
+      border-radius: 8px;
+      padding: 16px;
+
+      & h5,
+      h6 {
+        margin: 0;
+        text-align: left;
+      }
+
+      & h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: $text-500;
+      }
+
+      & h6 {
+        font-size: 12px;
+        font-weight: 400;
+        color: $sec-text-500;
+
+        & span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.containerDrawerProduct {
+  margin: -16px -20px;
+
+  & p {
+    margin: 0;
+  }
+
+  & .content {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    & .imageContainer {
+      flex-shrink: 0;
+      border: 1px solid $grey-200;
+      border-radius: 8px;
+      padding: 3px;
+    }
+
+    & .bundleName {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      & p {
+        font-size: 14px;
+        font-weight: 700;
+        color: $text-500;
+      }
+    }
+
+    & .summary {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 10px;
+
+      p:nth-child(1) {
+        color: $error-500;
+        background-color: $error-0;
+        padding: 4px 8px;
+        font-weight: 500;
+        font-size: 10px;
+      }
+
+      p:nth-child(2) {
+        color: $text-200;
+        font-size: 12px;
+        text-decoration: line-through;
+        font-weight: 700;
+      }
+
+      p:nth-child(3) {
+        color: $text-500;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+
+    & .discount {
+      width: fit-content;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background-color: $warning-300;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+
+      & p {
+        font-size: 12px;
+        font-weight: 600;
+        color: $text-0;
+      }
+    }
+  }
+
+  & .btnQty {
+    padding: 16px 20px;
+
+    & > p {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-500;
+      margin-bottom: 8px;
+    }
+  }
+
+  & .btnProceed {
+    margin-top: 20px;
+
+    & button {
+      border-radius: 0;
+      padding: 20px 0;
+    }
+
+    & button:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.btnApplyVariant {
+  & button {
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}

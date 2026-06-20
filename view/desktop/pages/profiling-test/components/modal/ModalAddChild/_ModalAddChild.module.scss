@@ -1,0 +1,85 @@
+@import "../ModalAssignChild/ModalAssignChiild.module";
+@import "../../../../../../../styles/themes/light-theme";
+@import "../../../../../../../styles/themes/light-theme-v2";
+
+.containerModalAddChild {
+  @extend .containerModalAssignChild;
+
+  & .infoForCreateChild {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: $quinary-6;
+
+    padding: 1rem;
+    border-radius: 0.6rem;
+  }
+
+  & .uploadImageSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.25rem;
+
+    & .imageProfileSection {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.9rem;
+
+      width: 11.25rem;
+      aspect-ratio: 1;
+      border-radius: 0.8rem;
+      background-color: $secondary-11;
+
+      & .imagePreview {
+        position: relative;
+        height: 10rem;
+        aspect-ratio: 1;
+      }
+
+      & p {
+        color: $secondary-4;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+    }
+
+    & .CTSDescriptionSection {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 45%;
+
+      & .CTXDeleteButton {
+        color: $grey-0;
+        background-color: $error-400;
+        font-weight: 700;
+      }
+
+      & p {
+        font-size: 0.8rem;
+        color: $secondary-6;
+      }
+    }
+  }
+
+  & .formControl {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    & .errorText {
+      color: $tertiary-1;
+      font-size: 12px;
+    }
+
+    & p {
+      margin-left: 1rem;
+    }
+  }
+}

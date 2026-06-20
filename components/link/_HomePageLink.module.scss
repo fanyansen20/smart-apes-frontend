@@ -1,0 +1,16 @@
+.linkDiv {
+  margin-left: auto !important;
+  z-index: 2;
+  & .link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    & .linkText {
+      font-size: 16px;
+      font-weight: 500;
+      color: #b946e9;
+      letter-spacing: -0.02em;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.partnersContainer {
+  margin-top: 60px;
+  margin-bottom: 6rem;
+  position: relative;
+  box-shadow: 2px 0px 14px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+
+  & .partnersHeaderTitle {
+    margin-top: 30px;
+    color: $secondary-3;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  & .partnersHeaderSubTitle {
+    color: $secondary-3;
+    font-weight: 400;
+  }
+
+  & .containerFeaturedOn {
+    margin-left: 50px;
+    & .imageFeaturedOn {
+      position: relative;
+      width: 150px;
+      height: 120px;
+    }
+  }
+}

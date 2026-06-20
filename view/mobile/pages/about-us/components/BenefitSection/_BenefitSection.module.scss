@@ -1,0 +1,18 @@
+@import "../../AboutUs.module";
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.servicesContainer {
+  padding: 0 1rem 1rem 1rem;
+
+  & .servicesTitle {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  & .servicesSubtitle {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

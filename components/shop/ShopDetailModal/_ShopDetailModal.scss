@@ -1,0 +1,58 @@
+.shopDetailModal {
+  background-color: $secondary-13;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  text-align: left;
+
+  & p {
+    margin: 0;
+  }
+
+  & .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-size: 1em;
+      font-weight: 600;
+      color: $secondary-1;
+    }
+  }
+
+  & .modalContent {
+    padding-top: 1em;
+    font-family: "Poppins";
+    font-size: 0.85em;
+    font-weight: 600;
+    color: $secondary-1;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0;
+  }
+
+  &:hover::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background: $secondary-8;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: $primary-3;
+    border-radius: 7px;
+  }
+}

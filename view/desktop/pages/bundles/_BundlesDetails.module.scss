@@ -1,0 +1,188 @@
+@import "../../../../styles/themes/light-theme";
+
+.container {
+  padding: 30px 0;
+  text-align: left;
+
+  & .overviewLeftContent {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    & .contentHeaderBundle {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+
+      & p {
+        color: $secondary-1;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      & .savePriceLabel {
+        padding: 4px 16px;
+        border-radius: 8px;
+        background-color: $quinary-2;
+
+        .textLabel {
+          color: $secondary-13;
+        }
+      }
+    }
+
+    & .containerDetailsProduct {
+      width: 100%;
+      display: flex;
+      gap: 16px;
+
+      & .containerImageProduct {
+        flex-basis: 20%;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $secondary-6;
+        border-radius: 8px;
+      }
+
+      & .containerDetailsProduct {
+        flex-basis: 80%;
+        display: flex;
+        flex-direction: column;
+
+        & .titleProduct {
+          color: $secondary-1;
+          font-weight: 700;
+          font-size: 20px;
+        }
+
+        & .priceOverview {
+          & p {
+            font-weight: 700;
+          }
+
+          & .discountPercentage {
+            color: $tertiary-2;
+            background-color: $tertiary-6;
+            border-radius: 5px;
+            padding: 4px 8px;
+            font-size: 16px;
+
+            & p {
+              font-weight: 500;
+            }
+          }
+          & .discountPriceBundle {
+            text-decoration: line-through;
+            color: $secondary-8;
+            font-size: 14px;
+          }
+          & .priceBundle {
+            font-size: 20px;
+          }
+        }
+
+        & .stockBundle {
+          color: $tertiary-2;
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        & .pricePerQty {
+          color: $secondary-5;
+        }
+      }
+
+      & .manageVariantsButton {
+        justify-content: flex-start;
+        padding: 12px 23px;
+        width: 85%;
+        text-align: left;
+        border: 1px solid $secondary-6;
+        font-weight: 600;
+        font-size: 13px;
+      }
+    }
+  }
+
+  & .menuDiv {
+    width: 90%;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 13.1647px;
+    position: sticky;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: left;
+
+    & .purchaseQuantity {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      & .quantityHeader {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary-1;
+      }
+
+      & .stockProduct {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: $secondary-1;
+      }
+
+      & .lowStockProduct {
+        @extend .stockProduct;
+        color: $quinary-3;
+      }
+
+      & .outOfStockProduct {
+        @extend .lowStockProduct;
+        color: $tertiary-3;
+      }
+    }
+
+    & .subTotalPrice {
+      & .subTotalHeader {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary-1;
+      }
+
+      & .price {
+        margin-top: 7px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: $secondary-1;
+      }
+    }
+
+    & .menuButtons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & .productManageBtnGroup {
+        & button {
+          padding: 10px;
+          color: "#475467";
+          font-size: 0.625rem;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

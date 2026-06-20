@@ -1,0 +1,92 @@
+@import "../../../../styles/themes/light-theme";
+
+.containerLoginMobile {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 20px;
+
+  & p {
+    margin: 0;
+  }
+
+  & .linkText {
+    color: $primary-1;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  & .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondary-2;
+    }
+
+    & h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: $secondary-1;
+    }
+  }
+
+  & .loginForm {
+    margin-bottom: 16px;
+
+    & label {
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    & .forgotPasswordLink {
+      display: flex;
+      justify-content: flex-end;
+
+      & p {
+        @extend .linkText;
+        width: fit-content;
+        margin-top: 12px;
+        text-align: right;
+      }
+    }
+  }
+
+  & .googleSignInButtonDiv {
+    & .googleSignInButton {
+      background-color: $senary-7;
+      color: $senary-2;
+      border-radius: 8px;
+      padding: 0.8rem 0;
+      text-transform: none;
+    }
+  }
+
+  & .registerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    & p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $secondary-1;
+    }
+
+    & .registerLink {
+      @extend .linkText;
+    }
+  }
+}

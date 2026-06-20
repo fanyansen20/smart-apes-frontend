@@ -1,0 +1,23 @@
+@import "../../../../../../../styles/themes/light-theme-v2";
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: $text-500;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: $sec-text-500;
+}
+
+.dividerText {
+  font-size: 14px;
+  color: $text-200;
+}
+
+.addUserIcon {
+  display: flex;
+  margin-right: 4px;
+  align-items: center;
+}

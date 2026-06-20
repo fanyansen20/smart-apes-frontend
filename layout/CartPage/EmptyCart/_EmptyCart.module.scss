@@ -1,0 +1,29 @@
+.emptyCartDiv {
+  height: 75vh !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+
+  & .image {
+    margin-top: 50px;
+    width: 300px;
+    height: 180px;
+  }
+
+  & .title {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 28px;
+    color: #333333;
+  }
+
+  & .subtitle {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #9f9f9f;
+  }
+}

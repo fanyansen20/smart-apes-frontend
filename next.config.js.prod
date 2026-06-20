@@ -1,0 +1,27 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: false,
+  swcMinify: true,
+  images: {
+    domains: [
+      "picsum.photos",
+      "via.placeholder.com",
+      "loremflickr.com",
+      "smartapes-cdn.sgp1.digitaloceanspaces.com",
+      "stage-smartapes-cdn.sgp1.digitaloceanspaces.com",
+    ],
+  },
+
+  env: {
+    NEXT_PUBLIC_BACKEND_URL: "https://api.smartapes.sg/",
+    NEXT_PUBLIC_SITE_KEY_DUMMY: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+    NEXT_PUBLIC_SITE_KEY: "6LcRD8YkAAAAAG9nvKtergc2XYXGkJqDSqtN3R_q",
+    NEXT_PUBLIC_MARKET_PLACE_URL: "https://smartapes.sg/",
+    NEXT_PUBLIC_PARENT_URL: "https://parent.smartapes.sg/",
+    NEXT_PUBLIC_SELLER_URL: "https://seller.smartapes.sg/",
+    NEXTAUTH_URL: "https://smartapes.sg",
+    SECRET:"8dbd8c32615e1d999d0014c4311aff8f"
+  },
+};
+
+module.exports = nextConfig;

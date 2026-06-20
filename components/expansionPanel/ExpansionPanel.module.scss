@@ -1,0 +1,36 @@
+@import "../../styles/themes/light-theme-v2";
+
+.containerCollapsible {
+  .cardTitle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .expandIcon {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+
+      & svg {
+        color: $text-500;
+      }
+    }
+  }
+
+  .cardExpand {
+    height: fit-content;
+  }
+
+  .cardCollapse {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .cardBody {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    color: $text-500;
+  }
+}

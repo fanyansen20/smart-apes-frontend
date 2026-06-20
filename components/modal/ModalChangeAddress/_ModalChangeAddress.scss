@@ -1,0 +1,79 @@
+.containerModalChangesAddress {
+  %button-base {
+    margin-top: 1em;
+    border-radius: 5px;
+    background-color: $primary-1;
+    color: $secondary-13;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  max-height: 80vh;
+  overflow: auto;
+  background-color: $secondary-13;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+
+  & .MuiTypography-body2 {
+    color: $secondary-6;
+  }
+
+  & .headerContentChangeAddress {
+    & .MuiTypography-h6 {
+      margin-bottom: 10px;
+      font-size: 700;
+    }
+  }
+
+  & .cardAddress {
+    cursor: pointer;
+    border: 1px solid $secondary-7;
+    background-color: $secondary-12;
+    border-radius: 8px;
+    width: 100%;
+    margin: 20px auto 0;
+    padding-bottom: 10px;
+
+    & .btn_location {
+      @extend %button-base;
+      margin-top: 0;
+      background-color: $primary-4;
+      min-width: 9em;
+      margin-right: 1em;
+    }
+
+    & .btn_address_primary {
+      @extend %button-base;
+      margin-top: 0;
+      min-width: 9em;
+    }
+
+    & .MuiTypography-subtitle2 {
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: $secondary-1;
+    }
+
+    &:hover {
+      background-color: $secondary-10;
+    }
+  }
+
+  & .cardAddressActive {
+    @extend .cardAddress;
+    border: 1px solid $primary-1;
+  }
+
+  & .containerButtonSubmit {
+    margin: 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

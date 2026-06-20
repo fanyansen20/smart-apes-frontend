@@ -1,0 +1,11 @@
+.primary-button {
+  @include buttonStyleSMA(
+    $textColor: $secondary-13,
+    $backGroundColor: $primary-1
+  );
+}
+
+.Mui-disabled {
+  opacity: 0.8;
+  background-color: $secondary-11;
+}

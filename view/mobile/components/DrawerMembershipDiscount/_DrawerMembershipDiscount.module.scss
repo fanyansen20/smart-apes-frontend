@@ -1,0 +1,52 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // no color palette
+  background-color: #f3efff;
+  text-align: left;
+  background-image: url("../../../../public/assets/images/membership/drawer-membership-discount.svg");
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin-top: 8px;
+
+  & .containerTitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: $brand-500;
+  }
+
+  & .chevron {
+    color: $brand-500;
+  }
+}
+
+.benefitContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  & p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 8px;
+  }
+
+  & .badgeContainer {
+    display: flex;
+    justify-content: center;
+    min-width: 30px;
+    min-height: 30px;
+
+    & .membershipBadge {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

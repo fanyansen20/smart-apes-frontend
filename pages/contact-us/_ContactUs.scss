@@ -1,0 +1,37 @@
+.container-contact-us {
+  padding: 40px 0 80px;
+  font-size: 12px;
+
+  & .overviewContactUs {
+    padding-left: 20px;
+
+    & .headerContactUs {
+      & .titleContact {
+        color: $secondary-1;
+        text-align: left;
+        font-weight: 700;
+        font-size: 2em;
+        padding-bottom: 10px;
+      }
+
+      & .bodyContact {
+        width: 110%;
+        color: $secondary-1;
+        text-align: left;
+      }
+    }
+
+    & .socialMediaContact {
+      text-align: left;
+
+      & .whatsappTitle {
+        color: $primary-1;
+        font-size: 1.4em;
+      }
+
+      & .titleEmail {
+        font-weight: 700;
+      }
+    }
+  }
+}

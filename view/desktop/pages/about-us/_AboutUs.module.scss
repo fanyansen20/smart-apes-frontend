@@ -1,0 +1,153 @@
+@import "../../../../styles/themes/light-theme";
+
+.labelButtonPrimary {
+  text-transform: uppercase;
+  color: $primary-1;
+  background-color: #e6ddff;
+  padding: 8px 1 6px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 2.16px;
+  border-radius: 50px;
+}
+
+.titleText {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: $secondary-1;
+
+  & .primaryText {
+    color: $primary-1;
+  }
+}
+
+.textBody {
+  font-size: 1.11rem;
+  font-weight: 400;
+  color: $secondary-1;
+}
+
+.textBodyBold {
+  @extend .textBody;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.containerHeroBanner {
+  display: flex;
+  position: relative;
+  margin-top: -50px;
+  height: 512px;
+
+  & .titleTextHeroBanner {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: $secondary-1;
+
+    & .primaryText {
+      color: $primary-1;
+    }
+  }
+
+  & .imageHeroBanner {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 480px;
+  }
+}
+
+.containerPartnersContent {
+  position: relative;
+  padding-bottom: 40px;
+
+  & .yupPlanetBg {
+    position: absolute;
+    left: -7%;
+    top: -15%;
+    width: 162.47px;
+    height: 94.49px;
+  }
+}
+
+.containerReason {
+  display: flex;
+  align-items: center;
+
+  & .contentTextReason {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+
+  & .imageCompony {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 30px;
+    border-radius: 20px;
+    width: 380px;
+    aspect-ratio: 1;
+  }
+}
+
+.containerMentor {
+  display: flex;
+
+  & .imageMentor {
+    margin: 40px;
+    width: 80%;
+    aspect-ratio: 1;
+    align-items: flex-start;
+  }
+}
+
+.textService {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.containerFooterHeroBanner {
+  position: relative;
+  padding: 40px 0;
+
+  & .footerHeroBanner {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    background: transparent
+      url("../../../../public/assets/about-us/banner-about-us.svg") no-repeat
+      center;
+
+    & p {
+      color: $secondary-13;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.footerAboutUs {
+  background-color: $secondary-12;
+  padding: 2rem;
+
+  & .titleFooter {
+    @extend .titleText;
+    font-size: 1.5rem;
+  }
+
+  & .cardFooter {
+    display: flex;
+    padding: 16px;
+    background-color: $secondary-13;
+    border-radius: 10px;
+    border: 1px solid $secondary-8;
+  }
+}

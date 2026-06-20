@@ -1,0 +1,48 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.typographyStyle {
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  text-align: center;
+}
+
+.pageTitle {
+  @extend .typographyStyle;
+
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 36px !important ;
+
+  & .highlight {
+    color: #fec84b;
+  }
+}
+
+.container {
+  justify-content: "center";
+  & p {
+    @extend .typographyStyle;
+  }
+}
+
+.socialMediaSection {
+  text-align: left;
+
+  & .socialMediaContainer {
+    border: 1px solid $grey-200;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    & p {
+      font-size: 0.875rem;
+    }
+
+    & .titleEmail {
+      font-weight: 700;
+    }
+
+    & .whatsappTitle {
+      color: $brand-500;
+      font-size: 0.875rem;
+    }
+  }
+}

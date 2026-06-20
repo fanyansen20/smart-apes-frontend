@@ -1,0 +1,123 @@
+.breakpointImages {
+  @include breakpoints.media(md) {
+    display: none;
+  }
+  @include breakpoints.media(lg) {
+    display: block;
+  }
+}
+
+.shopRatingContainer {
+  margin-top: 2em;
+
+  & p {
+    margin: 0;
+  }
+
+  & .sortSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .productsCount {
+      margin: 0;
+      font-size: 1.25em;
+      font-weight: 700;
+      color: $secondary-1;
+    }
+
+    & .sortDiv {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5em;
+
+      & .sortText {
+        display: block;
+        white-space: nowrap;
+        margin: 0;
+        font-weight: 700;
+        font-size: 1em;
+        color: $secondary-3;
+      }
+    }
+  }
+
+  & .ratingSection {
+    margin-top: 1em;
+    position: relative;
+    z-index: 0;
+
+    & .ratingCard {
+      padding: 1em;
+      margin-bottom: 1em;
+      border: 1px solid $secondary-10;
+      border-radius: 5px;
+      background-color: $secondary-13;
+
+      & .imageContainer {
+        border: 1px solid $secondary-9;
+        border-radius: 12px;
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & .productName {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: $secondary-1;
+      }
+
+      & .productComment {
+        font-family: "Open Sans";
+        font-size: 1em;
+        font-weight: 400;
+        color: $secondary-1;
+      }
+
+      & .ratingItem {
+        display: flex;
+        gap: 1em;
+        font-size: 1em;
+        font-weight: 700;
+        color: $secondary-5;
+
+        & svg {
+          color: $primary-4;
+        }
+      }
+    }
+
+    & .bigPlanet {
+      @extend .breakpointImages;
+      position: absolute;
+      top: 0px;
+      left: -250px;
+      z-index: -1;
+    }
+
+    & .orangePlanet {
+      @extend .breakpointImages;
+      position: absolute;
+      top: 40px;
+      right: -70px;
+      z-index: -1;
+    }
+
+    & .ufoOrange {
+      @extend .breakpointImages;
+      position: absolute;
+      bottom: 155px;
+      left: -70px;
+      z-index: -1;
+    }
+  }
+
+  & .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+}

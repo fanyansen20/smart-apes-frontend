@@ -1,0 +1,52 @@
+@import "/styles/themes/light-theme-v2";
+
+.membershipDiscountRate {
+  padding: 10px;
+  border-radius: 5px;
+  background-image: url("../../../../../../public/assets/images/member-discount-bg.svg");
+  background-size: contain;
+  background-color: #f3efff;
+  background-repeat: no-repeat;
+  text-align: left;
+
+  & .sectionTitle {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $brand-500;
+  }
+
+  & .discountLabel {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: $brand-0;
+
+    & .discountPercentText {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.20000000298023224px;
+      color: $brand-500;
+    }
+  }
+
+  & .basePriceText {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $text-200;
+    text-decoration: line-through;
+  }
+
+  & .finalPriceText {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: $text-500;
+  }
+}
+
+.membershipStatusTooltip {
+  width: 185px;
+  padding: 8px 12px;
+}

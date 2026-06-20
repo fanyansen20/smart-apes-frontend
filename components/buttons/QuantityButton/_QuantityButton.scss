@@ -1,0 +1,41 @@
+.quantityInputBtn {
+  display: flex;
+  height: 40px;
+  & .buttonQty {
+    background-color: $primary-1;
+    color: $secondary-13;
+    min-width: 40px;
+    max-width: 40px;
+    border-radius: 10px;
+  }
+
+  & .MuiInputBase-root {
+    width: 85px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  & .MuiInputBase-root input {
+    text-align: center;
+  }
+
+  & .Mui-disabled {
+    background-color: $secondary-11;
+  }
+
+  & .numberInput {
+    margin: 0 7px;
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+    & .MuiInputBase-root {
+      font-weight: 700;
+      color: $secondary-1;
+    }
+    & .Mui-disabled {
+      background-color: $secondary-13;
+    }
+  }
+}

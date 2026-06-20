@@ -1,0 +1,106 @@
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $secondary-12;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  height: 78px;
+  background: $secondary-8;
+  overflow: hidden;
+}
+
+.termAndConditionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  height: 100vh;
+  padding: 1rem 2rem;
+
+  & .termsArrowBack {
+    @include breakpoints.media(xs) {
+      display: none;
+    }
+
+    @include breakpoints.media(md) {
+      display: block;
+    }
+  }
+
+  & .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  & .textBoxContent {
+    border: 1px solid $secondary-9;
+    height: 50vh;
+    padding: 0 20px;
+    background-color: $secondary-12;
+    box-shadow: 0px 3px 4px $secondary-7;
+    border-radius: 5px;
+    text-align: justify;
+    width: fit-content;
+    overflow-y: scroll;
+    & .title {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $secondary-2;
+    }
+  }
+
+  & .orderedListNumber {
+    list-style: auto !important;
+    counter-reset: item;
+    padding-inline-start: 0;
+
+    & li {
+      display: block;
+    }
+
+    & li:before {
+      content: counters(item, ".") ". ";
+      counter-increment: item;
+    }
+  }
+
+  & .acceptTermsAndService {
+    user-select: none;
+    align-self: flex-start;
+    margin: 20px 0;
+    gap: 10px;
+
+    & .MuiTypography-root {
+      font-size: 0.8rem;
+      text-align: left;
+    }
+  }
+}
+
+@include breakpoints.media(md) {
+  .termAndConditionContainer {
+    & .title {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    & .acceptTermsAndService {
+      user-select: none;
+      align-self: flex-start;
+      margin-bottom: 20px;
+      gap: 0;
+
+      & .MuiTypography-root {
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+}

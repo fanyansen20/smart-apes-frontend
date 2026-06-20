@@ -1,0 +1,94 @@
+@import "../../../../../styles/themes/light-theme";
+
+.containerShopProduct {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  overflow-x: hidden;
+
+  & .container {
+    display: flex;
+    padding: 1.5rem 0;
+
+    & .productDiv {
+      width: 85%;
+      padding-left: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  & .sortSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .productsCount {
+      margin: 0;
+      font-size: 0.875em;
+      font-weight: 500;
+    }
+
+    & .productsCountEmpty {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        text-align: center;
+      }
+    }
+
+    & .sortDiv {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5em;
+
+      & .sortText {
+        display: block;
+        white-space: nowrap;
+        margin: 0;
+        font-weight: 700;
+        font-size: 1em;
+        color: $secondary-3;
+      }
+    }
+  }
+
+  & .bannerContainer {
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  & .bigPlanet {
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    z-index: -1;
+  }
+
+  & .orangePlanet {
+    position: absolute;
+    top: 390px;
+    right: -20px;
+    z-index: -1;
+  }
+
+  & .ufoOrange {
+    position: absolute;
+    bottom: 155px;
+    left: 0px;
+    z-index: -1;
+  }
+}
+
+.MuiGrid-root {
+  border: 2px solid greenyellow;
+}
+
+.MuiGrid-item {
+  border: 2px solid aqua;
+}

@@ -1,0 +1,172 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.containerBundleCart {
+  margin-bottom: 30px;
+
+  & .shopInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & img {
+      border-radius: 50%;
+      border: 1px solid $grey-200;
+    }
+
+    & .shopName {
+      font-size: 10px;
+      font-weight: 700;
+      color: $text-500;
+      text-align: left;
+    }
+
+    & .shopCountry {
+      font-size: 8px;
+      font-weight: 400;
+      text-align: left;
+      color: $text-500;
+    }
+  }
+
+  & .productSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  & .containerProducts {
+    border: 1px solid $grey-200;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+
+    & .titleBundle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      & h3 {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+        text-align: left;
+        color: $text-500;
+      }
+    }
+
+    & .priceContainer {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+
+      & .discountPercent {
+        color: $error-500;
+        background-color: $error-0;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 8px;
+      }
+
+      & .discountAmount {
+        text-decoration: line-through;
+        font-weight: 700;
+        color: $text-200;
+        font-size: 12px;
+      }
+
+      & .price {
+        font-weight: 700;
+        font-size: 14px;
+        color: $text-500;
+        margin-left: 8px;
+      }
+    }
+
+    & .discountLabel {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      background-color: $warning-300;
+      padding: 4px 8px;
+      border-radius: 8px;
+      margin-top: 8px;
+
+      & p {
+        font-size: 10px;
+        font-weight: 600;
+        color: $text-0;
+        margin-left: 8px;
+      }
+    }
+
+    & .productItem {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      margin-top: 10px;
+
+      & .imageContainer {
+        min-width: 80px;
+        aspect-ratio: 1;
+      }
+
+      & img {
+        border: 1px solid $grey-200 !important;
+        padding: 3px;
+        border-radius: 8px;
+      }
+
+      & .productTitle {
+        text-align: center;
+        display: -webkit-box;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        width: fit-content;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 700;
+        color: $text-500;
+      }
+
+      & .prices {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin: 10px 0;
+
+        & .dicountPercentage {
+          font-size: 10px;
+          font-weight: 500;
+          color: $error-500;
+          text-align: left;
+        }
+
+        & .basePrice {
+          font-size: 12px;
+          font-weight: 700;
+          color: $text-100;
+          text-align: left;
+        }
+
+        & .finalPrice {
+          font-size: 14px;
+          font-weight: 700;
+          color: $text-500;
+          text-align: left;
+        }
+      }
+    }
+
+    & .expansionText {
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: $brand-500;
+      text-align: left;
+    }
+  }
+}

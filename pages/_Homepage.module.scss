@@ -1,0 +1,48 @@
+.MuiFab-roo {
+  box-shadow: 5px 10px red;
+}
+
+.marquee {
+  position: relative;
+  background-color: $senary-6;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 40px;
+  margin: -15px 0 25px;
+  overflow-x: hidden;
+  & .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+    color: $secondary-2;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.homePage {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.loadingPage {
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

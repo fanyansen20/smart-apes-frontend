@@ -1,0 +1,10 @@
+.containerDrawerSearchBar {
+  height: 50vh;
+
+  & .searchInput {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+}

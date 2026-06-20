@@ -1,0 +1,28 @@
+.closeIconComponent {
+  margin-right: 20px;
+  color: $secondary-5;
+}
+
+.AlertComponent {
+  display: flex;
+  min-width: 24vw;
+  text-align: left;
+  flex-direction: row;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  & .AlertTittle {
+    text-transform: capitalize;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+
+  & .AlertSubTittle {
+    min-width: 18vw;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  & .MuiSvgIcon-root {
+    color: $secondary-13;
+  }
+}

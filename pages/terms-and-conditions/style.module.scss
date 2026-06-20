@@ -1,0 +1,57 @@
+.orderedListNumber {
+  list-style: auto !important;
+  counter-reset: item;
+  padding-inline-start: 0;
+
+  & li {
+    display: block;
+  }
+
+  & li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+  }
+}
+
+.orderedListSubNumber {
+  padding-inline-start: 8px;
+}
+
+.orderedListBracketLetter {
+  list-style: auto !important;
+  counter-reset: item;
+  padding-inline-start: 24px;
+
+  & li {
+    display: block;
+  }
+
+  & li:before {
+    content: "(" counter(item, lower-latin) ") ";
+  }
+}
+
+.orderedListBracketRoman {
+  list-style: auto !important;
+  counter-reset: item;
+
+  & li {
+    display: block;
+  }
+
+  & li:before {
+    content: "(" counter(item, lower-roman) ") ";
+  }
+}
+
+.bulletList {
+  list-style: disc;
+
+  & li {
+    display: list-item;
+  }
+
+  & li:before {
+    content: " ";
+  }
+}

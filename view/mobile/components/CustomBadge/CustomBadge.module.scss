@@ -1,0 +1,27 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.badge {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.2s, transform 0.3s, opacity 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  min-width: 25px;
+  aspect-ratio: 1 !important;
+  border-radius: 50%;
+  background-color: $error-500;
+
+  & p {
+    color: $text-0 !important;
+    font-size: 10px;
+  }
+}
+
+.badge__hidden {
+  @extend .badge;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}

@@ -1,0 +1,82 @@
+.wrapper {
+  margin-top: -90px;
+  overflow: hidden;
+  height: 100vh;
+  & .wrapperImg {
+    position: relative;
+  }
+
+  & .rightPlanet {
+    position: absolute;
+    right: -186px;
+    top: -165px;
+  }
+
+  & .leftPlanet {
+    position: absolute;
+    left: -186px;
+    bottom: -100px;
+  }
+
+  & .payment {
+    padding: 110px 0 238px;
+  }
+
+  & .cardPayment {
+    width: 504px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    & .paymentTextTitle {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 42px;
+      color: $secondary-1;
+    }
+
+    & .paymentTextDescription {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 600;
+      color: $secondary-5;
+      & .paymentCode {
+        font-weight: 700;
+      }
+    }
+  }
+
+  & .paymentDeadline {
+    border-radius: 10px;
+    background-color: $secondary-12;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 336px;
+    height: 35px;
+    margin: 10px auto 0;
+
+    p:nth-child(1) {
+      font-weight: 500;
+      color: $secondary-6;
+      font-size: 10px;
+      line-height: 15px;
+      text-align: left;
+    }
+    p:nth-child(2) {
+      font-weight: 700;
+      color: $secondary-6;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+    }
+  }
+
+  & .containerButtonPayment {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 10px auto 0;
+    gap: 10px;
+  }
+}

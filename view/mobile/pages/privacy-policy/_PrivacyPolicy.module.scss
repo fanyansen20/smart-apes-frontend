@@ -1,0 +1,37 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+
+  & p {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  & .title {
+    color: $text-500;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  & ol {
+    padding-left: 8px;
+    counter-reset: item;
+  }
+
+  & .subListContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & li {
+    display: block;
+  }
+
+  & li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+  }
+}

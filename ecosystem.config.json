@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "frontend-app",
+      "script": "next",
+      "interpreter": "none",
+      "args": "start",
+      "exec_mode": "fork",
+      "instances": 1,
+      "autorestart": true,
+      "watch": false,
+      "time": true,
+      "env_production": {
+        "NODE_ENV": "production",
+        "PORT": 3000
+      },
+      "env_development": {
+        "NODE_ENV": "development",
+        "PORT": 3000
+      }
+    }
+  ]
+}

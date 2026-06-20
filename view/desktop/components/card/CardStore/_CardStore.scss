@@ -1,0 +1,34 @@
+@import "../../../../../styles/themes/light-theme";
+
+.containerCardStore {
+  & .MuiCard-root {
+    text-align: left;
+    background: $secondary-13;
+    border: 1px solid $secondary-10;
+    box-shadow: 2px 1px 4px $secondary-10;
+    border-radius: 10px;
+  }
+
+  & .MuiCardHeader-avatar {
+    border-radius: 50%;
+    border: 1px solid $secondary-10;
+  }
+
+  & .MuiCardHeader-title {
+    font-weight: 500;
+  }
+
+  & .MuiCardHeader-subheader {
+    color: $senary-1;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  & .MuiButton-outlined {
+    font-weight: 700;
+    color: $primary-1;
+    background-color: transparent;
+    border: 1px solid $primary-1;
+    border-radius: 5px;
+  }
+}

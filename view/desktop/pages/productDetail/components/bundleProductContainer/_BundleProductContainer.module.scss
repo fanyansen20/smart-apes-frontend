@@ -1,0 +1,79 @@
+@import "../../../../../../styles/themes/light-theme";
+
+.containerBundlerProduct {
+  position: relative;
+  text-align: left;
+  border: 1px solid $secondary-8;
+  border-radius: 8px;
+  padding: 24px;
+
+  & .labelSaveCost {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    right: 0;
+    border-radius: 8px 0px 0px 8px;
+    padding: 4px 8px;
+    background-color: $quinary-2;
+    color: $secondary-13;
+
+    & p {
+      font-weight: 700;
+    }
+  }
+
+  & .titleBundle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  & .cardBundleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .imageBundle {
+      overflow: hidden;
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      border: 1px solid $secondary-8;
+    }
+
+    & p {
+      text-align: center;
+      max-width: 120px;
+      word-break: break-word;
+      font-weight: 600;
+      font-size: 14px;
+      color: $secondary-3;
+    }
+  }
+
+  & .priceOverview {
+    & p {
+      font-weight: 700;
+    }
+
+    & .discountPercentage {
+      color: $tertiary-2;
+      background-color: $tertiary-6;
+      border-radius: 5px;
+      padding: 8px;
+
+      & p {
+        font-weight: 600;
+      }
+    }
+    & .discountPriceBundle {
+      text-decoration: line-through;
+      color: $secondary-8;
+      font-size: 14px;
+    }
+    & .priceBundle {
+      font-size: 20px;
+    }
+  }
+}

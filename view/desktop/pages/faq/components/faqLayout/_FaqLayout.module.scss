@@ -1,0 +1,107 @@
+@use "../../../../../../styles/breakpoints";
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.headerFaq {
+  padding: 40px 0;
+  background-color: $brand-500;
+
+  & .titleHeaderFaq {
+    color: $text-0;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  & .searchFaq {
+    width: 50%;
+  }
+}
+
+.contentFaq {
+  padding: 32px 0;
+
+  & .categoriesFaq {
+    height: fit-content;
+    border: 1px solid $text-100;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: left;
+
+    & .listItemTextSelect {
+      font-weight: 700;
+      color: $text-500;
+    }
+
+    & .listItemText {
+      font-weight: 700;
+      color: $text-100;
+    }
+
+    & .listButton {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin-bottom: 8px;
+    }
+
+    & .nestedListButton {
+      font-weight: 700;
+      padding: 2px 0 4px 24px;
+    }
+  }
+}
+
+.footerFaq {
+  padding: 32px 0;
+  background-color: $grey-0;
+
+  & .titleFooterFaq {
+    font-weight: 700;
+
+    @include breakpoints.media(xs) {
+      font-size: 14px;
+    }
+    @include breakpoints.media(md) {
+      font-size: 24px;
+    }
+  }
+
+  & .cardFooterFaq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 16px;
+    padding: 22px 16px;
+    max-height: 80px;
+    background-color: $text-0;
+    border-radius: 10px;
+    border: 1px solid $text-100;
+
+    @include breakpoints.media(xs) {
+      width: 100%;
+    }
+    @include breakpoints.media(md) {
+      width: 350px;
+    }
+
+    & p {
+      @include breakpoints.media(xs) {
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      @include breakpoints.media(md) {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    & .waContent {
+      color: $brand-500;
+    }
+
+    & .titleEmailFaq {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,423 @@
+.product {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-areas:
+    "productImage productHeader purchaseMenus"
+    "productImage productPrice purchaseMenus"
+    "productImage cardDiscount purchaseMenus"
+    "productImage productSeller purchaseMenus"
+    "productImage productDetails purchaseMenus"
+    "productImage productVariants purchaseMenus"
+    "productImage productDescription purchaseMenus"
+    "bundleContainer bundleContainer purchaseMenus"
+    "ratings ratings purchaseMenus"
+    "relatedProducts relatedProducts relatedProducts ";
+
+  column-gap: 50px;
+  row-gap: 15px;
+  margin-bottom: 1rem;
+  * {
+    font-family: "Poppins";
+  }
+
+  & .divider {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  & .productImage {
+    grid-area: productImage;
+
+    & .imageContainer {
+      position: sticky;
+      top: 200px;
+      box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 6px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      & .iiz__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        border-radius: 3px;
+        object-fit: contain;
+      }
+
+      & .carouselContainer {
+        padding: 10px 0;
+
+        & .smallImage {
+          border-radius: 10px;
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+          width: 86px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        & .imageActive {
+          border: 4px solid $primary-1;
+        }
+      }
+    }
+  }
+
+  & .purchaseMenus {
+    grid-area: purchaseMenus;
+
+    & .menuDiv {
+      box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 13.1647px;
+      position: sticky;
+      top: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      text-align: left;
+
+      & .purchaseQuantity {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        & .quantityHeader {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: $secondary-1;
+        }
+
+        & .stockProduct {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: $secondary-1;
+        }
+
+        & .lowStockProduct {
+          @extend .stockProduct;
+          color: $quinary-3;
+        }
+
+        & .outOfStockProduct {
+          @extend .lowStockProduct;
+          color: $tertiary-3;
+        }
+      }
+
+      & .subTotalPrice {
+        & .subTotalHeader {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: $secondary-1;
+        }
+
+        & .price {
+          margin-top: 7px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          color: $secondary-1;
+        }
+      }
+
+      & .menuButtons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  & .productHeader {
+    grid-area: productHeader;
+    & .labelProducts {
+      width: 152.05px;
+      text-align: left;
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: #fff;
+        text-decoration: capitalize;
+        padding: 5px 0px 5px 0px;
+      }
+    }
+    & .productTitle {
+      margin-top: 14px;
+      width: 489px;
+      overflow: hidden;
+      word-wrap: break-word;
+      text-align: left;
+      font-weight: 700;
+      font-size: 1.7rem;
+      line-height: 35px;
+      color: $secondary-1;
+    }
+  }
+
+  & .cardDiscount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    & .discountPercent {
+      color: $tertiary-3;
+      background-color: $tertiary-6;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 500;
+      margin-right: 5px;
+    }
+
+    & .discountAmount {
+      text-decoration: line-through;
+      font-weight: 700;
+      color: $secondary-9;
+      font-size: 24px;
+    }
+
+    & .price {
+      margin-left: 5px;
+      color: $secondary-1;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  & .productPrice {
+    grid-area: productPrice;
+    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: $secondary-1;
+  }
+
+  & .productSeller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .sellerDetails {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      & .sellerLogo {
+        width: 47px;
+        height: 47px;
+        padding: 3px;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      & .seller {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        & .sellerName {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          letter-spacing: 0.2px;
+          color: $secondary-1;
+        }
+
+        & .sellerLocation {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0.2px;
+          color: $secondary-5;
+        }
+      }
+    }
+  }
+
+  & .productVariants {
+    text-align: left;
+    p {
+      margin-top: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      color: $secondary-1;
+    }
+    & .variantOptions {
+      margin: 15px 0;
+      p {
+        font-size: 14px;
+      }
+      & .MuiButton-outlinedPrimary {
+        border-radius: 30px;
+        padding: 12px 20px;
+        color: $secondary-1;
+        border-color: $secondary-8;
+      }
+      & .buttonSelect {
+        color: $secondary-13;
+        background-color: $primary-1;
+      }
+
+      & .buttonDisabled {
+        color: $secondary-6;
+        background-color: $secondary-12;
+      }
+    }
+  }
+
+  & .productDetails {
+    text-align: left;
+    & .detailsHeader {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    & ul {
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    & .button-see-more {
+      align-self: start;
+      color: $primary-2;
+    }
+  }
+
+  & .productDescription {
+    text-align: left;
+
+    & .descriptionHeader {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: $secondary-1;
+    }
+    & p {
+      word-wrap: break-word;
+    }
+  }
+
+  & .bundleContainer {
+    @extend .productDetails;
+    grid-area: bundleContainer;
+  }
+
+  & .ratings {
+    grid-area: ratings;
+
+    & .ratingDiv {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin: 46px 0px;
+
+      & .header {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+        color: $secondary-1;
+      }
+
+      & .tabs {
+        & .withText {
+          color: $primary-1;
+        }
+
+        & .star {
+          color: $primary-4 !important;
+        }
+        & .css-1aquho2-MuiTabs-indicator {
+          background-color: $primary-1;
+        }
+      }
+
+      & .rating {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem 1rem 1rem 0;
+        & .ratingImage {
+          border-radius: 12px;
+        }
+        & .ratingDetails {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 12px;
+          gap: 9px;
+
+          & .name {
+            font-weight: 700;
+            font-size: 16px;
+            color: $secondary-1;
+          }
+
+          & .stars {
+            display: flex;
+            align-items: center;
+            color: $primary-4;
+          }
+
+          & .ratingText {
+            font-weight: 400;
+            font-size: 16px;
+            color: $secondary-1;
+          }
+        }
+      }
+    }
+  }
+
+  & .relatedProducts {
+    grid-area: relatedProducts;
+    margin-bottom: 40px;
+
+    & .headerRow {
+      display: flex;
+      border-bottom: 1px solid $secondary-10;
+      margin-bottom: 30px;
+      & .header {
+        background-color: $primary-1;
+        padding: 1rem;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 16px;
+          color: $secondary-13;
+        }
+      }
+    }
+  }
+}
+
+.productManageBtnGroup {
+  & button {
+    padding: 10px;
+    color: "#475467";
+    font-size: 0.625rem;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

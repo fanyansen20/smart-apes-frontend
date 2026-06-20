@@ -1,0 +1,35 @@
+@mixin buttonStyleSMA(
+  $textColor,
+  $backGroundColor: transparent,
+  $borderColor: transparent
+) {
+  min-width: 0;
+  border: 1px solid $borderColor;
+  color: $textColor;
+  border-radius: 8px;
+  background-color: $backGroundColor;
+  font-size: 12px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $backGroundColor;
+    opacity: 0.5;
+  }
+}
+
+.size-large {
+  height: 50px;
+  font-size: 16px !important;
+}
+
+.MuiButton-startIcon {
+  padding-left: 5px;
+}
+
+.MuiButton-endIcon {
+  padding-right: 5px;
+}
+
+.disable-hover {
+  opacity: 1 !important;
+}

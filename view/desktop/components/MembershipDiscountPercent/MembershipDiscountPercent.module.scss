@@ -1,0 +1,37 @@
+@import "/styles/themes/light-theme-v2";
+
+.plusSymbol {
+  color: $grey-400;
+  font-weight: 500;
+}
+
+.membershipDiscountPercent {
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $brand-500;
+  background-color: $brand-0;
+}
+
+.membershipStatusTooltip {
+  width: 185px;
+  color: $text-500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: $text-0;
+  border: 1px solid $grey-100;
+
+  & p {
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  & span {
+    color: $text-0;
+    &::before {
+      border: 1px solid $grey-100;
+    }
+  }
+}

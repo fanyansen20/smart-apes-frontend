@@ -1,0 +1,38 @@
+.containerNotfoundPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  & .imageNotFound {
+    width: 35%;
+  }
+
+  & .titlePageNotFound {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+  & .textPageNotFound {
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 0.86rem;
+    color: $secondary-6;
+  }
+
+  & .buttonBack {
+    margin-top: 10px;
+    background-color: $secondary-13;
+    border-radius: 5px;
+    color: $primary-1;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    p {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: none;
+    }
+  }
+}

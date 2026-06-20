@@ -1,0 +1,157 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.typographyStyle {
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  text-align: center;
+}
+
+.pageTitle {
+  @extend .typographyStyle;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+
+  & .highlight {
+    color: #fec84b;
+  }
+}
+
+.pageSubTitle {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.container {
+  justify-content: "center";
+  @extend .typographyStyle;
+
+  & .sectionTitle {
+    color: $brand-500;
+    text-transform: uppercase;
+  }
+
+  & .paragraph {
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  & .testimonialContainer {
+    overflow-x: auto;
+    white-space: nowrap;
+
+    // Remove Scrollbar For Overflow Content
+    -ms-overflow-style: none; /*IE & Edge*/
+    scrollbar-width: none; /*Firefox*/
+    & .testimonialBox {
+      display: inline-block;
+      background-color: $grey-0;
+      border-radius: 1rem;
+      padding: 24px 8px;
+      white-space: wrap;
+      margin: 0 0.5rem;
+    }
+  }
+
+  //   Content How To
+  & .contentHowTo {
+    margin-top: 20px;
+    position: relative;
+
+    & .dashedBorder {
+      position: absolute;
+      left: 20px;
+      top: 13px;
+      width: 90%;
+
+      border-top: 4px dashed $sec-text-500;
+      z-index: 0;
+    }
+
+    & .containerListHowTo {
+      & .containerListNumber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+
+        & .circleListContainer {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: $sec-text-300;
+          & .borderCircle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $sec-text-300;
+            border: 1px solid $sec-text-500;
+            transform: translate(-2px, -2px);
+            & .circleItem {
+              font-size: 20px;
+              font-weight: 700;
+              color: $text-0;
+            }
+          }
+        }
+      }
+
+      & .active {
+        & .circleListContainer {
+          background-color: $sec-brand-50;
+          & .borderCircle {
+            background-color: $sec-brand-50;
+            border: 1px solid $sec-brand-500;
+          }
+        }
+      }
+    }
+
+    & .tutorialSubTitle {
+      font-weight: 700;
+      font-size: 16px;
+      color: $sec-brand-500;
+      padding: 30px 0 10px;
+    }
+
+    & .tutorialContent {
+      color: $sec-text-500;
+      text-align: justify;
+      & a {
+        color: $sec-brand-500;
+      }
+    }
+
+    & .containerListHowToActive {
+      @extend .containerListHowTo;
+      cursor: default;
+    }
+
+    & .containerImageHowTo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .imageTutor {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        aspect-ratio: 4/3;
+        box-shadow: -7px 4px 26px rgba(0, 0, 0, 0.25);
+      }
+
+      & .imageTutorAnimate {
+        @extend .imageTutor;
+        animation: fadeIn 2s;
+      }
+    }
+  }
+}

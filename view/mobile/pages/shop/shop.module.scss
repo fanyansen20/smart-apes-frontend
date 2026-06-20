@@ -1,0 +1,54 @@
+@import "../../../../styles/themes/light-theme";
+
+.container {
+  padding-bottom: 5rem;
+
+  & h1,
+  p {
+    margin: 0;
+  }
+
+  & h1 {
+    color: #000;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  & .shopInfo {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #bcc2ce;
+    border-radius: 0.5rem;
+    margin: 1rem 0.62rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .shopName {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      & p {
+        color: #000;
+        font-size: 0.625rem;
+        font-weight: 400;
+      }
+    }
+
+    & img {
+      border: 1px solid #bcc2ce;
+      border-radius: 50%;
+    }
+
+    & button {
+      border: 1px solid #bcc2ce;
+      border-radius: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    & .Mui-selected {
+      background-color: yellow !important;
+    }
+  }
+}

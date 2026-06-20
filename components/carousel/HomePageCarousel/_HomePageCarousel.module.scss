@@ -1,0 +1,50 @@
+.carouselContent {
+  padding: 20px 0;
+  margin: 1rem 100px;
+  overflow: hidden !important;
+  border-radius: 12px;
+  position: relative;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  outline: 0;
+  top: 50%;
+  transition: all 0.5s;
+  border-radius: 35px;
+  z-index: 1;
+  border: 0;
+  background-color: $primary-2;
+  color: $secondary-13;
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.customLeftArrow {
+  @extend .arrow;
+  left: 32px;
+}
+
+.customRightArrow {
+  @extend .arrow;
+  right: 32px;
+}
+
+@include breakpoints.media(md) {
+  .arrow {
+    visibility: hidden;
+  }
+}
+@include breakpoints.media(lg) {
+  .carouselContent {
+    padding: 10px 0;
+  }
+  .arrow {
+    visibility: initial;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../../../../styles/themes/light-theme-v2";
+
+.container {
+  background-color: $success-400;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  color: $text-0;
+  text-align: left;
+
+  & .title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  & .subtitle {
+    font-size: 12px;
+  }
+}

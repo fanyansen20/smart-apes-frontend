@@ -1,0 +1,52 @@
+@import "../../../../../styles/themes/light-theme";
+
+.containerCheckoutCart {
+  overflow: hidden;
+  border: 1px solid $secondary-9;
+  border-radius: 0.5rem;
+
+  & h4 {
+    margin: 0;
+  }
+
+  & p {
+    margin: 0.5rem 0 0 0;
+  }
+
+  & .headingCheckoutCart {
+    background-image: url("../../../../../public/assets/images/mask-member-checkout.svg");
+    background-size: cover;
+    background-position: center;
+    background-color: $primary-1;
+    padding: 1.1rem 1.4rem;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $secondary-13;
+  }
+
+  & .cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+
+    & .titleText {
+      color: $secondary-3;
+    }
+
+    & .dividerDashed {
+      border-bottom: 1px dashed $secondary-8;
+    }
+
+    & .checkoutDisclaimer {
+      text-align: justify;
+      font-size: 0.75rem;
+
+      & a {
+        color: $primary-1;
+        font-weight: 500;
+      }
+    }
+  }
+}

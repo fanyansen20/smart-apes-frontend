@@ -1,0 +1,34 @@
+@import "../../../../styles/themes/light-theme-v2";
+
+.title {
+  color: $text-500;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  & strong {
+    color: $brand-500;
+  }
+}
+
+.subtitle {
+  color: $text-500;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  @extend .subtitle;
+
+  font-weight: 500;
+}
+
+.container {
+  background-color: $text-0;
+}
+
+.borderBottom {
+  border-bottom: 0.5rem $grey-0 solid;
+  padding-bottom: 1.5rem;
+}

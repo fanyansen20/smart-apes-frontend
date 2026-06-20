@@ -1,0 +1,80 @@
+@import "../../../../../styles/themes/light-theme-v2";
+
+.containerModalImageCarousel {
+  background-color: $text-900;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  touch-action: none;
+
+  & .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+
+    & svg {
+      color: $text-0;
+    }
+  }
+
+  & .mainImage {
+    height: fit-content;
+    background-color: $text-0;
+    // touch-action: pinch-zoom;
+
+    & .bannerImg {
+      min-height: 350px;
+      width: 100vw !important;
+    }
+  }
+
+  & .productImages {
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-right: -10px;
+
+    & .productImage {
+      flex-shrink: 0;
+
+      & img {
+        background-color: $text-0;
+        border: 1px solid $text-100 !important;
+        border-radius: 8px !important;
+      }
+    }
+
+    & .productImage:nth-last-child(1) {
+      padding-right: 10px;
+    }
+
+    & .productImage__active {
+      @extend .productImage;
+
+      & img {
+        border: 2px solid $brand-500 !important;
+      }
+    }
+  }
+
+  & .imageNumber {
+    padding-left: 10px;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    color: $text-0;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.backdrop {
+  background-color: $text-900;
+}

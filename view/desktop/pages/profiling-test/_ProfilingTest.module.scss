@@ -1,0 +1,135 @@
+@import "../../../../styles/themes/light-theme";
+
+.profilingTestLandingPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: -3.5rem;
+
+  & h1,
+  h2,
+  h4,
+  h5,
+  h6,
+  p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  & .headingContent {
+    text-align: left;
+    padding: 4rem 0 7rem;
+    background-image: url("../../../../public/assets/images/profiling-test/background-profiling-test.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    & h1 {
+      font-size: 3rem;
+      color: $secondary-1;
+      text-shadow: 0 7px 6px $secondary-12;
+      line-height: 4.5rem;
+
+      & .primaryText {
+        color: $primary-1;
+      }
+    }
+
+    & p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      color: $secondary-13;
+    }
+  }
+
+  & .contentSection {
+    text-align: left;
+
+    & h2 {
+      letter-spacing: 3px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $primary-1;
+    }
+
+    & h1 {
+      font-size: 2.5rem;
+      color: $secondary-1;
+      text-shadow: 0 7px 6px $secondary-12;
+    }
+  }
+
+  & .threeContentSection {
+    @extend .contentSection;
+    text-align: center;
+    z-index: 1;
+
+    & h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  & .containerThreeContent {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 4rem;
+    z-index: 1;
+
+    & .backgroundPlanetRight {
+      position: absolute;
+      transform: scale(-1, 1.6);
+      opacity: 0.7;
+
+      right: -12rem;
+      top: 5rem;
+      width: 500px;
+      z-index: 0;
+    }
+
+    & .backgroundPlanetLeft {
+      @extend .backgroundPlanetRight;
+      right: 0;
+      left: -12rem;
+      top: 50rem;
+      transform: scale(1, 1.6);
+    }
+  }
+
+  & .pricingSection {
+    @extend .threeContentSection;
+    margin-top: -1rem;
+    padding: 1.6rem;
+    background-color: $secondary-11;
+
+    & .purchasePlanContainer {
+      background-image: url("../../../../public/assets/images/profiling-test/background-purchase-plan.svg");
+      background-size: cover;
+      color: $secondary-13;
+      height: 172px;
+      border-radius: 0.6rem;
+      padding: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+
+      & button {
+        width: fit-content;
+      }
+    }
+
+    & .basicPackageContainer {
+      @extend .purchasePlanContainer;
+
+      background-image: url("../../../../public/assets/images/profiling-test/background-basic-package.svg");
+    }
+  }
+
+  & .faqSection {
+    @extend .threeContentSection;
+    margin: 2.5rem 0;
+  }
+}

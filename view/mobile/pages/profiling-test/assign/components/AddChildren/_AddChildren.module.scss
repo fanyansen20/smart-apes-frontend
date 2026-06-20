@@ -1,0 +1,87 @@
+@import "../ChildrenList/ChildrenList.module";
+@import "../../../../../../../styles/themes/light-theme-v2";
+
+.warningContainer {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+  background-color: $warning-50;
+  gap: 8px;
+  border-radius: 8px;
+
+  & .warningText {
+    font-size: 12px;
+    color: $sec-text-500;
+    margin-left: 8px;
+  }
+}
+
+.noProfileImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $grey-0;
+  border-radius: 8px;
+
+  width: 9.25rem;
+  aspect-ratio: 1;
+
+  gap: 8px;
+
+  & .imagePreview {
+    position: relative;
+    height: 8rem;
+    aspect-ratio: 1;
+  }
+
+  .noProfileImageText {
+    font-size: 12px;
+    font-weight: 600;
+    color: $grey-300;
+    text-align: center;
+  }
+}
+
+.profileButtonContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+
+  .removeButton {
+    border-radius: 8px;
+    background-color: $error-400;
+  }
+
+  .removeButtonText {
+    font-size: 12px;
+    color: $text-0;
+    font-weight: 700;
+  }
+
+  .uploadButtonText {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .maximumFileText {
+    font-size: 10px;
+    color: $text-200;
+    font-weight: 600;
+  }
+}
+
+.inputLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: $text-500;
+  margin-bottom: 8px;
+}
+
+.errorText {
+  font-size: 12px;
+  padding-left: 16px;
+  margin-top: 4px;
+  color: $error-500;
+}

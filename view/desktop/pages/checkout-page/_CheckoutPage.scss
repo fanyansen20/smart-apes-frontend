@@ -1,0 +1,343 @@
+.cartDiv {
+  display: flex;
+  text-align: left;
+  & .leftDiv {
+    width: 80%;
+
+    & .header {
+      margin-bottom: 37px;
+      margin-top: -23px;
+      font-weight: 700;
+      font-size: 32px;
+      color: #333333;
+    }
+
+    & .row {
+      margin-top: 1rem;
+      position: relative;
+      & .physicalHeader {
+        background-color: #774bf0;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 20px;
+          color: #ffffff;
+        }
+      }
+
+      & .digitalHeader {
+        background-color: #ffb84c;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        & .headerText {
+          font-weight: 700;
+          font-size: 20px;
+          color: #ffffff;
+        }
+      }
+
+      & .additionalButtons {
+        padding-top: 1em;
+        gap: 0.5rem;
+
+        & .deliveryText {
+          padding-bottom: 1em;
+          font-weight: 700;
+          font-size: 12px;
+          color: $secondary-1;
+        }
+
+        & .deliverySelect {
+          padding: 9px 20px 10px 22px;
+          width: fit-content;
+          height: 41px;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 21px;
+          background-color: #fcfcfc;
+          border: 1px solid #dbdbdb;
+          border-radius: 5px;
+          color: #858585;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          text-align: left;
+        }
+
+        & .deliverySelectTrue {
+          @extend .deliverySelect;
+          padding: 9px 20px 10px 0px;
+          height: 53px;
+          & .optionDelivery {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            & .nameCompany {
+              padding-left: 16px;
+              color: #d2d2d2;
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 16px;
+              letter-spacing: 0.2px;
+            }
+            & .nameService {
+              padding-left: 16px;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 18px;
+              color: #6c6b6b;
+            }
+
+            & .deliveryFee {
+              @extend .nameService;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      & .productsByShop {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        & .shop {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          & .shopLogo {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+          }
+
+          & .shopName {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+          }
+        }
+
+        & .checkoutProduct {
+          //? css extend from _CartPages.scss
+          @extend .product;
+          margin-top: 1em;
+          display: flex;
+          align-items: flex-start;
+
+          & .checkoutProductImage {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            border: 1px solid $secondary-10;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+
+          & .productDetails {
+            display: flex;
+            flex-direction: column;
+
+            & .productTitle {
+              font-weight: 700;
+              font-size: 20px;
+              color: #333333;
+              overflow: hidden;
+            }
+
+            & .productPrice {
+              font-weight: 700;
+              font-size: 24px;
+              color: #333333;
+            }
+
+            & .quantityInputCheckOut {
+              margin: 5px 0;
+              & .MuiInputBase-root {
+                width: 110px;
+                height: 40px;
+                border-radius: 10px;
+              }
+              & .MuiInputBase-root input {
+                text-align: center;
+              }
+              & .Mui-disabled {
+                background-color: $secondary-13;
+              }
+            }
+
+            & .containerWriteNotes {
+              margin-top: 4px;
+              display: flex;
+              align-items: center;
+
+              & .buttonWriteNote {
+                & .titleNote {
+                  font-weight: 500;
+                  font-size: 0.8rem;
+                  color: $primary-1;
+                }
+              }
+
+              & .titleInput {
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: $secondary-1;
+                word-wrap: break-word;
+              }
+
+              & .MuiOutlinedInput-root {
+                padding: 8px 10px;
+                margin-left: 10px;
+                & fieldset {
+                  border-color: $primary-1;
+                }
+                &:hover fieldset {
+                  border-color: $primary-1;
+                }
+                & .Mui-focused {
+                  border-color: $primary-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .paymentDeliveryDetails {
+      margin-top: 2rem;
+      & .header {
+        margin-top: 1rem;
+      }
+
+      & .row {
+        padding: 0.75rem;
+        background-color: #fbfbfb;
+        border: 1px solid #dbdbdb;
+        border-radius: 13.1647px;
+        color: #575757;
+      }
+
+      & .paymentSelection {
+        @extend .row;
+        background-color: #fbfbfb;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding-left: 44px;
+
+        & .rowPayment {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            margin-left: 25px;
+            color: #575757;
+          }
+        }
+      }
+
+      & .address {
+        @extend .row;
+        padding: 1rem 2rem;
+        & .addressHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          & .addressName {
+            font-weight: 700;
+            font-size: 18px;
+            color: #333333;
+          }
+          & .addressChange {
+            cursor: pointer;
+            & p {
+              font-weight: 400;
+              font-size: 14px;
+              color: $secondary-6;
+              &:hover {
+                color: $primary-1;
+              }
+            }
+          }
+        }
+
+        & .detailsDiv {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  & .rightDiv {
+    width: 30%;
+    & .overviewCheckout {
+      box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 13.1647px;
+      position: sticky;
+      top: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      margin-left: 3rem;
+      text-align: left;
+
+      & .title {
+        font-weight: 700;
+        font-size: 20px;
+        color: #333333;
+      }
+
+      & .subTitleCheckout {
+        word-break: break-all;
+        font-weight: 700;
+        font-size: 13px;
+        color: #7a7a7a;
+      }
+
+      & .subOverview {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .subOverviewQuantity {
+          font-weight: 700;
+          font-size: 16px;
+          color: #333333;
+        }
+      }
+
+      & .purchaseButton {
+        background-color: #774bf0;
+        color: #ffffff;
+        border-radius: 5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        p {
+          font-weight: 700;
+          font-size: 12px;
+        }
+      }
+
+      & .couponButton {
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        color: #cacaca;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        p {
+          font-weight: 700;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

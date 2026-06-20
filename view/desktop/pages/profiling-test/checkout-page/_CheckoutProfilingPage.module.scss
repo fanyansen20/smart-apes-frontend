@@ -1,0 +1,83 @@
+@import "../../../../../styles/themes/light-theme";
+
+.containerCheckout {
+  margin-top: -3rem;
+
+  & h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  & .breadcrumbContainer {
+    background-color: $secondary-12;
+    padding: 0.6rem 0;
+
+    & img {
+      cursor: pointer;
+    }
+
+    & nav > ol {
+      & li:first-child {
+        display: flex;
+      }
+    }
+
+    & p {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $secondary-4;
+      cursor: pointer;
+    }
+
+    & .active {
+      font-weight: 600;
+      color: $secondary-1;
+      cursor: default;
+    }
+  }
+
+  & .sectionCheckout {
+    margin-top: 2.5rem;
+
+    & .productDetailContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      padding: 1rem 1.5rem;
+      text-align: left;
+      border: 1px solid $secondary-8;
+      border-radius: 0.8rem;
+
+      & .divider {
+        border-bottom: 4px solid $secondary-8;
+      }
+
+      & .discountPercentage {
+        color: $tertiary-3;
+        background-color: $tertiary-6;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+
+      & .discountPrice {
+        text-decoration: line-through;
+        font-weight: 700;
+        color: $secondary-9;
+      }
+
+      & .realPrice {
+        font-weight: 700;
+        color: $secondary-1;
+        font-size: 1.2rem;
+      }
+
+      & p {
+        padding: 0.6rem 0;
+        font-weight: 500;
+      }
+    }
+  }
+}

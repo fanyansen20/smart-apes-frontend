@@ -1,0 +1,29 @@
+.datepickerButton {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  & .datepickerDisplay {
+    font-family: "Poppins";
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $secondary-2;
+    border: 1px solid $secondary-10;
+    border-radius: 5px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & .datepickerComponent {
+    z-index: 1500;
+    position: absolute;
+    left: -600px;
+    top: 45px;
+    box-shadow: 0px 2px 6px 0px #0000001a;
+    border-radius: 10px !important;
+    background-color: $secondary-13;
+    text-align: right;
+  }
+}

@@ -1,0 +1,38 @@
+.bannerCarouselDiv {
+  position: relative;
+  & .bannerCarouselContainer {
+    margin-left: 0;
+    margin-right: 0;
+    @include breakpoints.media(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    & .bannerCarousel {
+      border-radius: 20px;
+      height: 300px;
+    }
+  }
+}
+
+.square {
+  flex-grow: 0;
+  position: absolute;
+  top: 0;
+  @include breakpoints.media(xs) {
+    display: none;
+  }
+  @include breakpoints.media(md) {
+    display: flex;
+  }
+}
+.leftSquare {
+  @extend .square;
+  transform: scaleX(-1);
+  left: -130px;
+}
+
+.rightSquare {
+  @extend .square;
+  right: -130px;
+}
